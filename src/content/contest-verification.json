@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "algebra-transformations-q01",
+    "method": "Solve the defining quadratic symbolically and sum the sixth powers of its reciprocal roots."
+  },
+  {
+    "id": "algebra-transformations-q02",
+    "method": "Expand the polynomial identity and verify a feasible triple (1,2,3)."
+  },
+  {
+    "id": "algebra-transformations-q03",
+    "method": "Exhaustive positive-integer search with bounds supplied by the positive linear terms."
+  },
+  {
+    "id": "algebra-transformations-q04",
+    "method": "Symbolic evaluation of the original radical expression."
+  },
+  {
+    "id": "algebra-transformations-q05",
+    "method": "Solve the independently recovered quadratic and evaluate the fifth powers."
+  },
+  {
+    "id": "algebra-transformations-q06",
+    "method": "Evaluate at the two exact roots of t²-6t+6."
+  },
+  {
+    "id": "algebra-transformations-q07",
+    "method": "Direct substitution into the original degree-six expression plus symbolic factorization."
+  },
+  {
+    "id": "algebra-transformations-q08",
+    "method": "Symbolic factorization proves compositeness for n≥2; enumerate the first 100 values as a secondary check."
+  },
+  {
+    "id": "algebra-transformations-q09",
+    "method": "Enumerate integer solutions independently; the factored equation establishes the finite ratio possibilities."
+  },
+  {
+    "id": "algebra-transformations-q10",
+    "method": "Solve the defining quadratic and evaluate the original rational expression."
+  },
+  {
+    "id": "algebra-transformations-q11",
+    "method": "Expand after substituting c=-a-b and verify the exhibited real solution."
+  },
+  {
+    "id": "algebra-transformations-q12",
+    "method": "Symbolically solve the original quartic and multiply its distinct real roots."
+  },
+  {
+    "id": "algebra-transformations-q13",
+    "method": "Check with the exact pair 3+sqrt(5), 3-sqrt(5), whose sum/product satisfy the original conditions."
+  },
+  {
+    "id": "algebra-transformations-q14",
+    "method": "Perform 2026 iterations in exact rational arithmetic, independent of the period shortcut."
+  },
+  {
+    "id": "algebra-transformations-example-1",
+    "method": "Evaluate both exact roots of the associated quadratic."
+  },
+  {
+    "id": "algebra-transformations-example-2",
+    "method": "Enumerate all positive integer solutions; positive linear terms bound each variable."
+  },
+  {
+    "id": "polynomial-structure-q01",
+    "method": "Direct polynomial evaluation with the root-factorization identity."
+  },
+  {
+    "id": "polynomial-structure-q02",
+    "method": "Exact symbolic roots substituted into the reciprocal sum."
+  },
+  {
+    "id": "polynomial-structure-q03",
+    "method": "Independent interpolation of the four data points."
+  },
+  {
+    "id": "polynomial-structure-q04",
+    "method": "Interpolate the unique affine remainder."
+  },
+  {
+    "id": "polynomial-structure-q05",
+    "method": "Direct exact polynomial division, independent of the coefficient recurrence."
+  },
+  {
+    "id": "polynomial-structure-q06",
+    "method": "Construct the monic polynomial from four prescribed roots and verify all four values."
+  },
+  {
+    "id": "polynomial-structure-q07",
+    "method": "Solve the quartic exactly and sum the sixth powers."
+  },
+  {
+    "id": "polynomial-structure-q08",
+    "method": "Direct evaluation of both polynomial factors, with a nonzero denominator check."
+  },
+  {
+    "id": "polynomial-structure-q09",
+    "method": "Check the residue obstruction and construct an explicit polynomial for every other option."
+  },
+  {
+    "id": "polynomial-structure-q10",
+    "method": "Factor the reconstructed cubic and directly evaluate the fourth powers."
+  },
+  {
+    "id": "polynomial-structure-q11",
+    "method": "Expand the independently determined polynomial and verify all three data values."
+  },
+  {
+    "id": "polynomial-structure-q12",
+    "method": "Direct symbolic polynomial division."
+  },
+  {
+    "id": "polynomial-structure-q13",
+    "method": "Solve the full coefficient conditions symbolically and evaluate the resulting polynomial."
+  },
+  {
+    "id": "polynomial-structure-q14",
+    "method": "Factor the cubic and substitute its exact three roots into the original expression."
+  },
+  {
+    "id": "polynomial-structure-example-1",
+    "method": "Factor P=(t-2)(t²-3t+1) and evaluate the two factors at 3."
+  },
+  {
+    "id": "polynomial-structure-example-2",
+    "method": "Exact polynomial division followed by evaluation of the remainder at 1."
+  },
+  {
+    "id": "sequence-synthesis-q01",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q02",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q03",
+    "method": "Solve the quadratic exactly and verify 2,4,8 satisfy all three conditions."
+  },
+  {
+    "id": "sequence-synthesis-q04",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q05",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q06",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q07",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q08",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q09",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q10",
+    "method": "Exact geometric limit with ratio 9/16; convergence checked."
+  },
+  {
+    "id": "sequence-synthesis-q11",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q12",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q13",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-q14",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-example-1",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "sequence-synthesis-example-2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q01",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q02",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q03",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q04",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q05",
+    "method": "Enumerate a wide interval; the factor proof excludes all remaining integers."
+  },
+  {
+    "id": "integer-constraints-q06",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q07",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q08",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q09",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q10",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q11",
+    "method": "Bounded search checks examples; the minimal-positive-sum argument proves nonexistence for all integers."
+  },
+  {
+    "id": "integer-constraints-q12",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-q13",
+    "method": "Independent search through square multiples, checking cube multiples and the first attainable value."
+  },
+  {
+    "id": "integer-constraints-q14",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-example-1",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "integer-constraints-example-2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q01",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q02",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q03",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q04",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q05",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q06",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q07",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q08",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q09",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q10",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q11",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q12",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q13",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-q14",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-example-1",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "congruence-systems-example-2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q01",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q02",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q03",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q04",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q05",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q06",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q07",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q08",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q09",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q10",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q11",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q12",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q13",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-q14-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-example-1",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "valuations-divisors-example-2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "geometric-constructions-q01",
+    "method": "Heron area gives an independent altitude."
+  },
+  {
+    "id": "geometric-constructions-q02",
+    "method": "Heron area divided by semiperimeter."
+  },
+  {
+    "id": "geometric-constructions-q03",
+    "method": "Independent trapezoid area formula after the height is established."
+  },
+  {
+    "id": "geometric-constructions-q04",
+    "method": "Distance-to-line determinant for the hypotenuse."
+  },
+  {
+    "id": "geometric-constructions-q05",
+    "method": "Coordinates B=(0,0), C=(14,0), A=(5,12), D=(13/2,0)."
+  },
+  {
+    "id": "geometric-constructions-q06",
+    "method": "Altitude computation; area partition proves independence from the interior point."
+  },
+  {
+    "id": "geometric-constructions-q07",
+    "method": "Independent coordinates from the two side-distance equations."
+  },
+  {
+    "id": "geometric-constructions-q08",
+    "method": "Exact line intersection after the reflected path argument."
+  },
+  {
+    "id": "geometric-constructions-q09",
+    "method": "Independent cosine-law evaluation."
+  },
+  {
+    "id": "geometric-constructions-q10",
+    "method": "Area-over-semiperimeter radius followed by a coordinate distance."
+  },
+  {
+    "id": "geometric-constructions-q11",
+    "method": "Projection AP=119/13 gives an independent right-triangle check."
+  },
+  {
+    "id": "geometric-constructions-q12",
+    "method": "Exact solve of the independent height-ratio model."
+  },
+  {
+    "id": "geometric-constructions-q13",
+    "method": "Circle-coordinate intersection gives y=±4."
+  },
+  {
+    "id": "geometric-constructions-q14",
+    "method": "Coordinate distance between adjacent vertices."
+  },
+  {
+    "id": "geometric-constructions-example-1",
+    "method": "Independent Heron calculation."
+  },
+  {
+    "id": "geometric-constructions-example-2",
+    "method": "Reflected coordinate distance and exact intersection x=3."
+  },
+  {
+    "id": "ratio-geometry-q01",
+    "method": "Coordinate determinant areas."
+  },
+  {
+    "id": "ratio-geometry-q02",
+    "method": "Coordinate centroid and determinant area."
+  },
+  {
+    "id": "ratio-geometry-q03",
+    "method": "Exact area-ratio equation."
+  },
+  {
+    "id": "ratio-geometry-q04",
+    "method": "Independent line intersection in an affine reference triangle."
+  },
+  {
+    "id": "ratio-geometry-q05",
+    "method": "Exact line intersection."
+  },
+  {
+    "id": "ratio-geometry-q06",
+    "method": "Coordinate diagonal intersection and area."
+  },
+  {
+    "id": "ratio-geometry-q07",
+    "method": "Independent determinant area after line intersection."
+  },
+  {
+    "id": "ratio-geometry-q08",
+    "method": "Two exact area expressions."
+  },
+  {
+    "id": "ratio-geometry-q09",
+    "method": "Positive root of the exact area ratio."
+  },
+  {
+    "id": "ratio-geometry-q10",
+    "method": "Coordinate check: vertices (0,0),(25,0),(9,12) form a right angle at the third point."
+  },
+  {
+    "id": "ratio-geometry-q11",
+    "method": "Direct inradii of the two small right triangles: (9,12,15) and (12,16,20)."
+  },
+  {
+    "id": "ratio-geometry-q12",
+    "method": "Affine cross-section in a coordinate trapezoid."
+  },
+  {
+    "id": "ratio-geometry-q13",
+    "method": "Independent two-step affine side fraction."
+  },
+  {
+    "id": "ratio-geometry-q14",
+    "method": "Exact coordinate intersection gives F=(0,-1)."
+  },
+  {
+    "id": "ratio-geometry-example-1",
+    "method": "Independent coordinate intersection."
+  },
+  {
+    "id": "ratio-geometry-example-2",
+    "method": "Solve the two independent linear constraints."
+  },
+  {
+    "id": "circle-synthesis-q01",
+    "method": "Exact chord-product equation; proof by similar triangles."
+  },
+  {
+    "id": "circle-synthesis-q02",
+    "method": "Coordinate tangent equation or Pythagorean check."
+  },
+  {
+    "id": "circle-synthesis-q03",
+    "method": "Exact equation using total lengths."
+  },
+  {
+    "id": "circle-synthesis-q04",
+    "method": "Circle-coordinate intersection."
+  },
+  {
+    "id": "circle-synthesis-q05",
+    "method": "Independent split along a diagonal: opposite angles yield cos B=-3/7 and K=21 sin B."
+  },
+  {
+    "id": "circle-synthesis-q06",
+    "method": "Exact center-power equation."
+  },
+  {
+    "id": "circle-synthesis-q07",
+    "method": "Independent tangent-length linear system."
+  },
+  {
+    "id": "circle-synthesis-q08",
+    "method": "Coordinate realization on the circle with diameter from (0,0) to (10,0)."
+  },
+  {
+    "id": "circle-synthesis-q09",
+    "method": "Independent algebraic simplification to 2√(4·9)."
+  },
+  {
+    "id": "circle-synthesis-q10",
+    "method": "Inscribed-angle theorem with the stated arc location."
+  },
+  {
+    "id": "circle-synthesis-q11",
+    "method": "Independent circumcenter calculation from coordinates."
+  },
+  {
+    "id": "circle-synthesis-q12",
+    "method": "Exact nested-radius comparison."
+  },
+  {
+    "id": "circle-synthesis-q13",
+    "method": "Coordinate chord lines y=6 and y=-8."
+  },
+  {
+    "id": "circle-synthesis-q14",
+    "method": "Independent 7–24–25 realization with inradius three."
+  },
+  {
+    "id": "circle-synthesis-example-1",
+    "method": "Exact reconstructed power equation."
+  },
+  {
+    "id": "circle-synthesis-example-2",
+    "method": "Independent coordinate realization."
+  },
+  {
+    "id": "coordinate-lattice-q01",
+    "method": "Independent strict half-plane enumeration."
+  },
+  {
+    "id": "coordinate-lattice-q02",
+    "method": "Exact polygon area; decomposition into a 6×3 strip with corner adjustments also gives 22."
+  },
+  {
+    "id": "coordinate-lattice-q03",
+    "method": "A concrete rectangle realization satisfying the three given distances."
+  },
+  {
+    "id": "coordinate-lattice-q04",
+    "method": "Independent circumcenter calculation."
+  },
+  {
+    "id": "coordinate-lattice-q05",
+    "method": "Independent matrix composition."
+  },
+  {
+    "id": "coordinate-lattice-q06",
+    "method": "The fixed point (1,-1) is verified by both successive rotations."
+  },
+  {
+    "id": "coordinate-lattice-q07",
+    "method": "Independent construction of the other two vertices."
+  },
+  {
+    "id": "coordinate-lattice-q08",
+    "method": "Direct collinearity enumeration."
+  },
+  {
+    "id": "coordinate-lattice-q09",
+    "method": "Independent set of reduced slopes."
+  },
+  {
+    "id": "coordinate-lattice-q10",
+    "method": "Independent equal-factor AM–GM on x/4 and y/6 gives xy≤6."
+  },
+  {
+    "id": "coordinate-lattice-q11",
+    "method": "Independent exact point-to-line distance."
+  },
+  {
+    "id": "coordinate-lattice-q12",
+    "method": "Exhaustive exact lattice enumeration."
+  },
+  {
+    "id": "coordinate-lattice-q13",
+    "method": "Direct area of the four midpoint coordinates."
+  },
+  {
+    "id": "coordinate-lattice-q14",
+    "method": "Exhaustive determinant enumeration."
+  },
+  {
+    "id": "coordinate-lattice-example-1",
+    "method": "Independent polygon determinant calculation."
+  },
+  {
+    "id": "coordinate-lattice-example-2",
+    "method": "Independent union of lattice points on the three segments."
+  },
+  {
+    "id": "spatial-geometry-q01",
+    "method": "Independent three-dimensional coordinate distance."
+  },
+  {
+    "id": "spatial-geometry-q02",
+    "method": "Exhaustive comparison of the three opposite-corner rectangular unfoldings."
+  },
+  {
+    "id": "spatial-geometry-q03",
+    "method": "Independent cross products of six center-to-vertex triangles."
+  },
+  {
+    "id": "spatial-geometry-q04",
+    "method": "Exact radius scaling."
+  },
+  {
+    "id": "spatial-geometry-q05",
+    "method": "Exact similar-cone volume ratio."
+  },
+  {
+    "id": "spatial-geometry-q06",
+    "method": "Independent frustum formula."
+  },
+  {
+    "id": "spatial-geometry-q07",
+    "method": "Exact volume balance."
+  },
+  {
+    "id": "spatial-geometry-q08",
+    "method": "Independent tetrahedron determinant."
+  },
+  {
+    "id": "spatial-geometry-q09",
+    "method": "Independent dimensions 2,3,5 satisfy all face areas."
+  },
+  {
+    "id": "spatial-geometry-q10",
+    "method": "Independent coordinate enumeration of all 64 cubes."
+  },
+  {
+    "id": "spatial-geometry-q11",
+    "method": "Independent symbolic volume integral; the learner solution uses Cavalieri, not calculus."
+  },
+  {
+    "id": "spatial-geometry-q12",
+    "method": "Exhaustive exact distances among the twelve edge midpoints."
+  },
+  {
+    "id": "spatial-geometry-q13",
+    "method": "Independent derivative factorization confirms the unique interior maximum; AM–GM supplies the noncalculus proof."
+  },
+  {
+    "id": "spatial-geometry-q14",
+    "method": "Exact volume ratio."
+  },
+  {
+    "id": "spatial-geometry-example-1",
+    "method": "Independent flat-net distance."
+  },
+  {
+    "id": "spatial-geometry-example-2",
+    "method": "Independent area scale times height scale."
+  },
+  {
+    "id": "constrained-counting-q01-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q02-choices-v2",
+    "method": "Independent enumeration of distinct block arrangements."
+  },
+  {
+    "id": "constrained-counting-q03-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q04",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q05-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q06",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q07-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q08",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q09",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q10",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q11",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q12",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q13-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-q14",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-example-1-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "constrained-counting-example-2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "combinatorial-identities-q01",
+    "method": "Independent polynomial coefficient."
+  },
+  {
+    "id": "combinatorial-identities-q02",
+    "method": "Independent enumeration of all subset sizes."
+  },
+  {
+    "id": "combinatorial-identities-q03",
+    "method": "Independent subset enumeration."
+  },
+  {
+    "id": "combinatorial-identities-q04",
+    "method": "Direct exact polynomial multiplication."
+  },
+  {
+    "id": "combinatorial-identities-q05",
+    "method": "Independent exact summation."
+  },
+  {
+    "id": "combinatorial-identities-q06",
+    "method": "Independent direct combination count."
+  },
+  {
+    "id": "combinatorial-identities-q07",
+    "method": "Independent bitmask containment enumeration."
+  },
+  {
+    "id": "combinatorial-identities-q08",
+    "method": "Independent disjoint bitmask enumeration."
+  },
+  {
+    "id": "combinatorial-identities-q09",
+    "method": "Independent exact rational summation."
+  },
+  {
+    "id": "combinatorial-identities-q10",
+    "method": "Direct Laurent-polynomial expansion."
+  },
+  {
+    "id": "combinatorial-identities-q11",
+    "method": "Independent polynomial multiplication."
+  },
+  {
+    "id": "combinatorial-identities-q12",
+    "method": "Independent enumeration of all balanced step strings."
+  },
+  {
+    "id": "combinatorial-identities-q13",
+    "method": "Independent subset enumeration."
+  },
+  {
+    "id": "combinatorial-identities-q14",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "combinatorial-identities-example-1",
+    "method": "Independent enumeration of committee-chair outcomes."
+  },
+  {
+    "id": "combinatorial-identities-example-2",
+    "method": "Independent unrestricted six-object combination count."
+  },
+  {
+    "id": "probability-states-q01-choices-v2",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "probability-states-q02",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "probability-states-q03",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "probability-states-q04",
+    "method": "Independent geometric series sum with first term 1/6 and ratio 25/36."
+  },
+  {
+    "id": "probability-states-q05",
+    "method": "Exact absorbing-state linear system."
+  },
+  {
+    "id": "probability-states-q06",
+    "method": "Independent enumeration of transfer/draw pairs."
+  },
+  {
+    "id": "probability-states-q07",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "probability-states-q08",
+    "method": "Independent polygon area."
+  },
+  {
+    "id": "probability-states-q09",
+    "method": "Exact angular measure ratio."
+  },
+  {
+    "id": "probability-states-q10",
+    "method": "Independent enumeration of all 19,683 assignments."
+  },
+  {
+    "id": "probability-states-q11",
+    "method": "Independent state equations E2=1+(2/3)E2 and E1=1+(1/3)E1+(2/3)E2."
+  },
+  {
+    "id": "probability-states-q12",
+    "method": "Independent best-of-three binomial probability."
+  },
+  {
+    "id": "probability-states-q13",
+    "method": "Independent equally weighted urn-slot enumeration."
+  },
+  {
+    "id": "probability-states-q14",
+    "method": "Independent exact favorable-region area."
+  },
+  {
+    "id": "probability-states-example-1",
+    "method": "Exact first-step state equations."
+  },
+  {
+    "id": "probability-states-example-2",
+    "method": "Independent ordered distinct-ball pairing."
+  },
+  {
+    "id": "invariant-extremal-q01",
+    "method": "Ten-pair partition and explicit size-ten avoiding set."
+  },
+  {
+    "id": "invariant-extremal-q02",
+    "method": "Unique odd-part chains and the explicit antichain 16 through 30."
+  },
+  {
+    "id": "invariant-extremal-q03",
+    "method": "Independent remaining-color count; the domino invariant proves nonexistence."
+  },
+  {
+    "id": "invariant-extremal-q04",
+    "method": "Independent explicit merge order."
+  },
+  {
+    "id": "invariant-extremal-q05",
+    "method": "Direct transition residue check; invariant separates start and target."
+  },
+  {
+    "id": "invariant-extremal-q06",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "invariant-extremal-q07",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "invariant-extremal-q08",
+    "method": "Independent class counts and explicit eleven-element witness."
+  },
+  {
+    "id": "invariant-extremal-q09",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "invariant-extremal-q10",
+    "method": "Exhaustive two-color graphs through six vertices; proof certificate: three same-colored incident edges force a monochromatic triangle; a five-cycle and its complement are triangle-free."
+  },
+  {
+    "id": "invariant-extremal-q11",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "invariant-extremal-q12",
+    "method": "Explicit move certificate checked against the initial multiset."
+  },
+  {
+    "id": "invariant-extremal-q13",
+    "method": "Independent Euclidean gcd calculation."
+  },
+  {
+    "id": "invariant-extremal-q14",
+    "method": "Explicit attaining circle checked; the average and equality argument prove the lower bound."
+  },
+  {
+    "id": "invariant-extremal-example-1",
+    "method": "Four distinct parity classes and a unit-square sharpness witness."
+  },
+  {
+    "id": "invariant-extremal-example-2",
+    "method": "Independent exhaustive circular arrangements with one position fixed."
+  },
+  {
+    "id": "inequalities-domains-q01",
+    "method": "Independent completed-square form xy=25-(x-5)²."
+  },
+  {
+    "id": "inequalities-domains-q02",
+    "method": "Equality witness plus Cauchy–Schwarz lower-bound certificate."
+  },
+  {
+    "id": "inequalities-domains-q03",
+    "method": "Independent identity x+9/x-6=(x-3)²/x."
+  },
+  {
+    "id": "inequalities-domains-q04",
+    "method": "Independent derivative factorization (1-x)(1-3x) confirms the interior maximum."
+  },
+  {
+    "id": "inequalities-domains-q05",
+    "method": "Equality conditions force the sole positive triple; direct substitution verifies both constraints."
+  },
+  {
+    "id": "inequalities-domains-q06-choices-v2",
+    "method": "Independent Cauchy bound (√(x+5)+√(5-x))²≤2·10, with equality x=0."
+  },
+  {
+    "id": "inequalities-domains-q07",
+    "method": "Independent real solution-set computation."
+  },
+  {
+    "id": "inequalities-domains-q08",
+    "method": "Independent real solution-set computation."
+  },
+  {
+    "id": "inequalities-domains-q09",
+    "method": "Independent rational-grid interval check; exact endpoint proof establishes the continuous interval."
+  },
+  {
+    "id": "inequalities-domains-q10",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "inequalities-domains-q11",
+    "method": "Independent exact root checks for all ten parameters."
+  },
+  {
+    "id": "inequalities-domains-q12",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "inequalities-domains-q13-choices-v2",
+    "method": "Independent derivative 2x-8/x³ is positive throughout [2,5]."
+  },
+  {
+    "id": "inequalities-domains-q14",
+    "method": "Independent finite enumeration."
+  },
+  {
+    "id": "inequalities-domains-example-1",
+    "method": "Independent Cauchy bound (a+b)(1/a+1/b)≥4."
+  },
+  {
+    "id": "inequalities-domains-example-2",
+    "method": "Piecewise formulas verify the bound on all three intervals."
+  },
+  {
+    "id": "log-trig-synthesis-q01",
+    "method": "Exact transformed roots and substitution into both logarithms."
+  },
+  {
+    "id": "log-trig-synthesis-q02",
+    "method": "Exact roots filtered by the original arguments."
+  },
+  {
+    "id": "log-trig-synthesis-q03",
+    "method": "Exact common-base equation."
+  },
+  {
+    "id": "log-trig-synthesis-q04",
+    "method": "Exact real cubic root followed by inverse transformation."
+  },
+  {
+    "id": "log-trig-synthesis-q05",
+    "method": "Direct substitution gives log₂4=2."
+  },
+  {
+    "id": "log-trig-synthesis-q06",
+    "method": "Exact polynomial roots and inverse exponential map."
+  },
+  {
+    "id": "log-trig-synthesis-q07",
+    "method": "Exact interval from the monotonic inverse."
+  },
+  {
+    "id": "log-trig-synthesis-q08",
+    "method": "Independent admissible angle θ=π/12; symmetry gives the other solution."
+  },
+  {
+    "id": "log-trig-synthesis-q09",
+    "method": "Independent exact angle substitution."
+  },
+  {
+    "id": "log-trig-synthesis-q10",
+    "method": "All four angles substituted exactly; unit-circle branches exhaust the factored equation."
+  },
+  {
+    "id": "log-trig-synthesis-q11",
+    "method": "Independent coordinate circumcircle."
+  },
+  {
+    "id": "log-trig-synthesis-q12",
+    "method": "Independent exact trigonometric evaluation."
+  },
+  {
+    "id": "log-trig-synthesis-q13",
+    "method": "Independent exact angle substitution."
+  },
+  {
+    "id": "log-trig-synthesis-q14",
+    "method": "Unit-circle equality witness and independent amplitude √(3²+4²)."
+  },
+  {
+    "id": "log-trig-synthesis-example-1",
+    "method": "Exact transformed roots and domain verification."
+  },
+  {
+    "id": "log-trig-synthesis-example-2",
+    "method": "Independent algebraic identity and feasibility check."
+  },
+  {
+    "id": "complex-roots-unity-q01",
+    "method": "Direct exact complex division."
+  },
+  {
+    "id": "complex-roots-unity-q02",
+    "method": "Direct exact binomial expansion."
+  },
+  {
+    "id": "complex-roots-unity-q03",
+    "method": "Independent Vieta on the nontrivial-root polynomial."
+  },
+  {
+    "id": "complex-roots-unity-q04",
+    "method": "Independent symbolic resultant."
+  },
+  {
+    "id": "complex-roots-unity-q05",
+    "method": "Independent logarithmic-derivative identity Q′(1)/Q(1)."
+  },
+  {
+    "id": "complex-roots-unity-q06",
+    "method": "Exact unit-circle coordinate signs."
+  },
+  {
+    "id": "complex-roots-unity-q07",
+    "method": "Exact circle-line roots substituted and multiplied."
+  },
+  {
+    "id": "complex-roots-unity-q08",
+    "method": "Independent planar rotation."
+  },
+  {
+    "id": "complex-roots-unity-q09",
+    "method": "Independent opposite-vertex midpoint coordinates."
+  },
+  {
+    "id": "complex-roots-unity-q10",
+    "method": "Direct exact binomial expansion."
+  },
+  {
+    "id": "complex-roots-unity-q11",
+    "method": "Independent direct binomial coefficient sum."
+  },
+  {
+    "id": "complex-roots-unity-q12",
+    "method": "Independent dynamic programming on integer coordinate displacements."
+  },
+  {
+    "id": "complex-roots-unity-q13",
+    "method": "Independent numerical chord-square sum supports the exact root-sum proof."
+  },
+  {
+    "id": "complex-roots-unity-q14",
+    "method": "Independent numerical product of exact chord formulas supports the polynomial proof."
+  },
+  {
+    "id": "complex-roots-unity-example-1",
+    "method": "Independent exact division."
+  },
+  {
+    "id": "complex-roots-unity-example-2",
+    "method": "Independent direct coefficient sum."
+  }
+]

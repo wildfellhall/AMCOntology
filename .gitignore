@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.DS_Store
+.env*
+*.log
+*.tsbuildinfo
+playwright-report/
+test-results/
+tmp/
+*.pdf
+AMC Preparation Site.md
+.venv/
+__pycache__/
+*.pyc
+# Local research and visual QA artifacts are never publication assets.
+screenshots/
+artifacts/
+output/
+*.png
+*.jpg
+*.jpeg
+*.webp

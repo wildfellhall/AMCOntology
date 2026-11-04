@@ -1,0 +1,12 @@
+- Eighteen connected AMC 10/12 competition studies, with fifty accessible prerequisite references.
+- A dedicated formula book with 112 source-attributed crash-course formula entries, 18 animated derivation and worked-example studies, and a 122-relation course index.
+- A searchable collection of all 232 numbered textbook examples, with original notation, documented diagram corrections, 44 written solutions, and 182 source-provided video-solution links.
+- Step playback, keyboard navigation, adjustable mathematical explorations, self-explanation checks, and reduced-motion support.
+- Textbook-grounded explanations, mathematical derivations, worked examples, completion tasks, and interactive SVG explorations.
+- Fifteen-question study sets combining 252 authored competition problems with attributed released-contest practice.
+- Separate formula recognition, meaning, and matching drills, plus contextual method selection with explanations of competing approaches.
+- Optional diagnosis, spaced review, and recommendations grounded in demonstrated learning.
+- A searchable knowledge map, personal mistake notebook, and portable progress backups.
+- A cream manuscript interface with original SVG astronomy, botanical, and optics illustrations, illuminated initials, and ornamental folio borders.
+- Personal names and ink colors, responsive layouts, accessible mathematics, and local progress storage.
+- Documented learning-science research, transparent curriculum sources, and a reusable AMC10/12problems authoring skill.

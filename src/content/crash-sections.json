@@ -1,0 +1,582 @@
+[
+  {
+    "section": "1.1",
+    "title": "Factorials",
+    "page": 1
+  },
+  {
+    "section": "1.2",
+    "title": "Permutations",
+    "page": 1
+  },
+  {
+    "section": "1.3",
+    "title": "Word Rearrangements",
+    "page": 2
+  },
+  {
+    "section": "1.4",
+    "title": "Combinations",
+    "page": 2
+  },
+  {
+    "section": "1.5",
+    "title": "Subsets",
+    "page": 3
+  },
+  {
+    "section": "1.6",
+    "title": "Probability",
+    "page": 4
+  },
+  {
+    "section": "1.7",
+    "title": "Distinguishability",
+    "page": 4
+  },
+  {
+    "section": "1.8",
+    "title": "Probability of Independent Events",
+    "page": 5
+  },
+  {
+    "section": "1.9",
+    "title": "Probability of Dependent Events",
+    "page": 5
+  },
+  {
+    "section": "1.10",
+    "title": "Casework",
+    "page": 5
+  },
+  {
+    "section": "1.11",
+    "title": "Complementary Counting",
+    "page": 6
+  },
+  {
+    "section": "1.12",
+    "title": "Principle of Inclusion and Exclusion",
+    "page": 6
+  },
+  {
+    "section": "1.13",
+    "title": "Stars and Bars",
+    "page": 7
+  },
+  {
+    "section": "1.14",
+    "title": "Combinatorial Identities",
+    "page": 8
+  },
+  {
+    "section": "1.15",
+    "title": "Vandermonde\u2019s Identity",
+    "page": 8
+  },
+  {
+    "section": "1.16",
+    "title": "Pascal\u2019s and Hockey Stick Identity",
+    "page": 9
+  },
+  {
+    "section": "1.17",
+    "title": "Rectangle Counting",
+    "page": 11
+  },
+  {
+    "section": "1.18",
+    "title": "Square Counting",
+    "page": 12
+  },
+  {
+    "section": "1.19",
+    "title": "Path Counting",
+    "page": 13
+  },
+  {
+    "section": "1.20",
+    "title": "Geometric Probability",
+    "page": 14
+  },
+  {
+    "section": "1.21",
+    "title": "Expected Value",
+    "page": 14
+  },
+  {
+    "section": "1.22",
+    "title": "Recursion",
+    "page": 15
+  },
+  {
+    "section": "1.23",
+    "title": "Probability States",
+    "page": 16
+  },
+  {
+    "section": "2.1",
+    "title": "Algebraic Manipulations",
+    "page": 17
+  },
+  {
+    "section": "2.2",
+    "title": "Binomial Expansions",
+    "page": 18
+  },
+  {
+    "section": "2.3",
+    "title": "Quadratic Factorizations",
+    "page": 19
+  },
+  {
+    "section": "2.4",
+    "title": "Cubic Factorizations",
+    "page": 20
+  },
+  {
+    "section": "2.5",
+    "title": "Higher Power Factorizations",
+    "page": 20
+  },
+  {
+    "section": "2.6",
+    "title": "Algebraic Equations",
+    "page": 21
+  },
+  {
+    "section": "2.7",
+    "title": "Polynomials",
+    "page": 21
+  },
+  {
+    "section": "2.8",
+    "title": "Polynomial Root Representation",
+    "page": 23
+  },
+  {
+    "section": "2.9",
+    "title": "Symmetric Polynomials",
+    "page": 24
+  },
+  {
+    "section": "2.10",
+    "title": "Polynomial Manipulations",
+    "page": 25
+  },
+  {
+    "section": "2.11",
+    "title": "Arithmetic Sequences",
+    "page": 28
+  },
+  {
+    "section": "2.12",
+    "title": "Geometric Sequences",
+    "page": 29
+  },
+  {
+    "section": "2.13",
+    "title": "Special Sequences",
+    "page": 30
+  },
+  {
+    "section": "2.14",
+    "title": "Telescoping",
+    "page": 31
+  },
+  {
+    "section": "2.15",
+    "title": "Mean Median Mode",
+    "page": 32
+  },
+  {
+    "section": "2.16",
+    "title": "Work and Rate",
+    "page": 34
+  },
+  {
+    "section": "2.17",
+    "title": "Speed Distance Time",
+    "page": 35
+  },
+  {
+    "section": "3.1",
+    "title": "Primes",
+    "page": 36
+  },
+  {
+    "section": "3.2",
+    "title": "Sum of Factors",
+    "page": 37
+  },
+  {
+    "section": "3.3",
+    "title": "Product of Factors",
+    "page": 38
+  },
+  {
+    "section": "3.4",
+    "title": "Divisibility",
+    "page": 38
+  },
+  {
+    "section": "3.5",
+    "title": "GCD and LCM",
+    "page": 38
+  },
+  {
+    "section": "3.6",
+    "title": "Modular Arithmetic",
+    "page": 40
+  },
+  {
+    "section": "3.7",
+    "title": "Algebraic Number Theory",
+    "page": 44
+  },
+  {
+    "section": "3.8",
+    "title": "Quadratic Factorizations",
+    "page": 44
+  },
+  {
+    "section": "3.9",
+    "title": "Cubic Factorizations",
+    "page": 45
+  },
+  {
+    "section": "3.10",
+    "title": "Simon\u2019s Favorite Factoring Trick",
+    "page": 45
+  },
+  {
+    "section": "3.11",
+    "title": "Higher Power Factorizations",
+    "page": 45
+  },
+  {
+    "section": "3.12",
+    "title": "Sophie Germain\u2019s Identity",
+    "page": 46
+  },
+  {
+    "section": "3.13",
+    "title": "Diophantine Equations",
+    "page": 46
+  },
+  {
+    "section": "3.14",
+    "title": "Bases",
+    "page": 47
+  },
+  {
+    "section": "3.15",
+    "title": "Palindromes",
+    "page": 48
+  },
+  {
+    "section": "3.16",
+    "title": "Chicken McNugget Theorem",
+    "page": 48
+  },
+  {
+    "section": "4.1",
+    "title": "Angle Chasing",
+    "page": 49
+  },
+  {
+    "section": "4.2",
+    "title": "Basics of Angle Chasing",
+    "page": 49
+  },
+  {
+    "section": "4.3",
+    "title": "Area of a Triangle",
+    "page": 56
+  },
+  {
+    "section": "4.4",
+    "title": "Triangle Properties",
+    "page": 61
+  },
+  {
+    "section": "4.5",
+    "title": "Equilateral Triangle",
+    "page": 63
+  },
+  {
+    "section": "4.6",
+    "title": "Right Triangles",
+    "page": 64
+  },
+  {
+    "section": "4.7",
+    "title": "Similar Triangles",
+    "page": 68
+  },
+  {
+    "section": "4.8",
+    "title": "Angle Bisector Theorem",
+    "page": 71
+  },
+  {
+    "section": "4.9",
+    "title": "Square",
+    "page": 72
+  },
+  {
+    "section": "4.10",
+    "title": "Rectangle",
+    "page": 73
+  },
+  {
+    "section": "4.11",
+    "title": "Rhombus",
+    "page": 73
+  },
+  {
+    "section": "4.12",
+    "title": "Parallelogram",
+    "page": 74
+  },
+  {
+    "section": "4.13",
+    "title": "Trapezoid",
+    "page": 75
+  },
+  {
+    "section": "4.14",
+    "title": "Circle Area",
+    "page": 76
+  },
+  {
+    "section": "4.15",
+    "title": "Circle Length",
+    "page": 77
+  },
+  {
+    "section": "4.16",
+    "title": "Power of a Point",
+    "page": 77
+  },
+  {
+    "section": "4.17",
+    "title": "Cyclic Quadrilaterals",
+    "page": 79
+  },
+  {
+    "section": "4.18",
+    "title": "Polygons",
+    "page": 82
+  },
+  {
+    "section": "4.19",
+    "title": "Hexagon",
+    "page": 83
+  },
+  {
+    "section": "4.20",
+    "title": "Octagon",
+    "page": 84
+  },
+  {
+    "section": "4.21",
+    "title": "Pentagons",
+    "page": 85
+  },
+  {
+    "section": "4.22",
+    "title": "Cube",
+    "page": 85
+  },
+  {
+    "section": "4.23",
+    "title": "Rectangular Prism",
+    "page": 86
+  },
+  {
+    "section": "4.24",
+    "title": "Cylinder",
+    "page": 87
+  },
+  {
+    "section": "4.25",
+    "title": "Cone",
+    "page": 88
+  },
+  {
+    "section": "4.26",
+    "title": "Sphere",
+    "page": 89
+  },
+  {
+    "section": "4.27",
+    "title": "Tetrahedron",
+    "page": 90
+  },
+  {
+    "section": "4.28",
+    "title": "Pyramid",
+    "page": 91
+  },
+  {
+    "section": "4.29",
+    "title": "Volume of Complex Polyhedrons",
+    "page": 91
+  },
+  {
+    "section": "4.30",
+    "title": "Cross Sections",
+    "page": 91
+  },
+  {
+    "section": "4.31",
+    "title": "Area of Complex Shapes",
+    "page": 91
+  },
+  {
+    "section": "4.32",
+    "title": "Length of complex shapes",
+    "page": 92
+  },
+  {
+    "section": "4.33",
+    "title": "Line in Coordinate Plane",
+    "page": 93
+  },
+  {
+    "section": "4.34",
+    "title": "Circle in Coordinate Plane",
+    "page": 94
+  },
+  {
+    "section": "4.35",
+    "title": "Shoelace Theorem to \ufb01nd Area",
+    "page": 95
+  },
+  {
+    "section": "4.36",
+    "title": "Picks Theorem (Optional)",
+    "page": 96
+  },
+  {
+    "section": "5.1",
+    "title": "Floor and Ceiling Functions",
+    "page": 97
+  },
+  {
+    "section": "5.2",
+    "title": "Trivial Inequality",
+    "page": 98
+  },
+  {
+    "section": "5.3",
+    "title": "AM-GM",
+    "page": 98
+  },
+  {
+    "section": "5.4",
+    "title": "Cauchy Schwarz",
+    "page": 100
+  },
+  {
+    "section": "5.5",
+    "title": "Logarithms",
+    "page": 101
+  },
+  {
+    "section": "5.6",
+    "title": "Logarithmic Formulas",
+    "page": 102
+  },
+  {
+    "section": "5.7",
+    "title": "Trigonometric Identities",
+    "page": 104
+  },
+  {
+    "section": "5.8",
+    "title": "More Trigonometric Identities",
+    "page": 105
+  },
+  {
+    "section": "5.9",
+    "title": "Important Trigonometric Values",
+    "page": 105
+  },
+  {
+    "section": "5.10",
+    "title": "Unit Circle Identities",
+    "page": 106
+  },
+  {
+    "section": "5.11",
+    "title": "Pythagorean Identities",
+    "page": 107
+  },
+  {
+    "section": "5.12",
+    "title": "Double Angle Identities",
+    "page": 107
+  },
+  {
+    "section": "5.13",
+    "title": "Addition and Subtraction Identities",
+    "page": 108
+  },
+  {
+    "section": "5.14",
+    "title": "Half Angle Identities",
+    "page": 109
+  },
+  {
+    "section": "5.15",
+    "title": "Sum to Product Identities",
+    "page": 109
+  },
+  {
+    "section": "5.16",
+    "title": "Product to Sum Identities",
+    "page": 110
+  },
+  {
+    "section": "5.17",
+    "title": "Graphing to Solve Trigonometry Problems",
+    "page": 110
+  },
+  {
+    "section": "5.18",
+    "title": "Periods and Graphs of Trigonometric Functions",
+    "page": 110
+  },
+  {
+    "section": "5.19",
+    "title": "Area of a Triangle using Trigonometry",
+    "page": 111
+  },
+  {
+    "section": "5.20",
+    "title": "Law of Sines",
+    "page": 112
+  },
+  {
+    "section": "5.21",
+    "title": "Law of Cosines",
+    "page": 112
+  },
+  {
+    "section": "5.22",
+    "title": "Complex Numbers",
+    "page": 113
+  },
+  {
+    "section": "5.23",
+    "title": "Complex Numbers in Polynomials",
+    "page": 118
+  },
+  {
+    "section": "5.24",
+    "title": "Complex Numbers in Trigonometry",
+    "page": 118
+  }
+]

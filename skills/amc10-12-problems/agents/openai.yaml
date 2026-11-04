@@ -1,0 +1,4 @@
+interface:
+  display_name: "AMC10/12problems"
+  short_description: "Author and verify AMC 10/12 practice problems"
+  default_prompt: "Use $amc10-12-problems to write and independently verify varied AMC 10/12 mathematics problems."

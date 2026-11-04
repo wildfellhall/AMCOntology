@@ -1,0 +1,856 @@
+[
+  {
+    "lessonId": "fractions",
+    "tex": "\\frac ab+\\frac cd=\\frac{ad+bc}{bd}",
+    "name": "Common denominator",
+    "use": "adding two fractions with possibly different denominators",
+    "condition": "The denominators b and d are nonzero."
+  },
+  {
+    "lessonId": "ratios",
+    "tex": "V_{\\mathrm{new}}=V_{\\mathrm{old}}(1+r)",
+    "name": "Percentage change",
+    "use": "updating a quantity by a relative change r",
+    "condition": "An increase uses positive r; a decrease uses negative r, expressed as a fraction rather than a percent number."
+  },
+  {
+    "lessonId": "rates",
+    "tex": "v_{\\mathrm{avg}}=\\frac{2uv}{u+v}",
+    "name": "Equal-distance average speed",
+    "use": "averaging two positive speeds over equal distances",
+    "condition": "The two traveled distances are equal and there is no extra waiting time."
+  },
+  {
+    "lessonId": "exponents",
+    "tex": "\\sqrt{x^2}=|x|",
+    "name": "Square root of a square",
+    "use": "recovering the nonnegative magnitude of a real number",
+    "condition": "x is real; a square root denotes the principal nonnegative root."
+  },
+  {
+    "lessonId": "linear",
+    "tex": "x=\\frac{ce-bf}{ae-bd}",
+    "name": "Two-equation elimination",
+    "use": "solving ax+by=c and dx+ey=f for x",
+    "condition": "The determinant ae-bd is nonzero."
+  },
+  {
+    "lessonId": "statistics",
+    "tex": "\\bar x=\\frac{ma+nb}{m+n}",
+    "name": "Weighted mean",
+    "use": "combining groups of sizes m,n and means a,b",
+    "condition": "The group sizes are positive; the group totals are ma and nb."
+  },
+  {
+    "lessonId": "identities",
+    "tex": "x^2+y^2=(x+y)^2-2xy",
+    "name": "Symmetric squares",
+    "use": "finding a sum of squares from a sum and a product",
+    "condition": "The identity holds for real or complex x and y."
+  },
+  {
+    "lessonId": "quadratics",
+    "tex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+    "name": "Quadratic formula",
+    "use": "solving ax squared plus bx plus c equals zero",
+    "condition": "The leading coefficient a is nonzero; real roots require a nonnegative discriminant."
+  },
+  {
+    "lessonId": "vieta",
+    "tex": "r+s=-\\frac ba,\\quad rs=\\frac ca",
+    "name": "Vieta for a quadratic",
+    "use": "reading the sum and product of the roots from coefficients",
+    "condition": "r,s are roots of ax squared plus bx plus c, counted with multiplicity, and a is nonzero."
+  },
+  {
+    "lessonId": "polynomials",
+    "tex": "P(x)=(x-a)Q(x)+P(a)",
+    "name": "Remainder theorem",
+    "use": "finding the constant remainder when dividing P(x) by x-a",
+    "condition": "P and Q are polynomials and the divisor is the linear polynomial x-a."
+  },
+  {
+    "lessonId": "arithmetic",
+    "tex": "S_n=\\frac n2\\bigl(2a+(n-1)d\\bigr)",
+    "name": "Arithmetic sum",
+    "use": "adding n terms starting at a with constant difference d",
+    "condition": "n is a positive integer and the common difference is fixed."
+  },
+  {
+    "lessonId": "geometric",
+    "tex": "S_n=\\frac{a(1-r^n)}{1-r}",
+    "name": "Finite geometric sum",
+    "use": "adding n terms starting at a with constant ratio r",
+    "condition": "n is a positive integer and r is not one; r=1 instead gives na."
+  },
+  {
+    "lessonId": "telescoping",
+    "tex": "\\frac1{k(k+1)}=\\frac1k-\\frac1{k+1}",
+    "name": "Telescoping decomposition",
+    "use": "turning consecutive-denominator fractions into cancelling differences",
+    "condition": "k is neither zero nor negative one."
+  },
+  {
+    "lessonId": "inequalities",
+    "tex": "\\frac{a+b}{2}\\ge\\sqrt{ab}",
+    "name": "Two-variable AM–GM",
+    "use": "bounding a sum or product of two nonnegative quantities",
+    "condition": "a,b are nonnegative; equality holds exactly when a=b."
+  },
+  {
+    "lessonId": "factors",
+    "tex": "\\tau\\!\\left(\\prod p_i^{a_i}\\right)=\\prod(a_i+1)",
+    "name": "Divisor count",
+    "use": "counting positive divisors from a prime factorization",
+    "condition": "The p values are distinct primes and the exponents are nonnegative integers."
+  },
+  {
+    "lessonId": "divisibility",
+    "tex": "v_p(n!)=\\sum_{j\\ge1}\\left\\lfloor\\frac n{p^j}\\right\\rfloor",
+    "name": "Factorial valuation",
+    "use": "counting how many factors of a prime occur in a factorial",
+    "condition": "p is prime and n is a nonnegative integer; terms eventually become zero."
+  },
+  {
+    "lessonId": "gcd",
+    "tex": "\\gcd(a,b)\\operatorname{lcm}(a,b)=ab",
+    "name": "GCD–LCM product",
+    "use": "connecting two positive integers to their greatest divisor and least multiple",
+    "condition": "a and b are positive integers; this product relation is for two numbers."
+  },
+  {
+    "lessonId": "modular",
+    "tex": "a\\equiv b\\pmod m\\iff m\\mid(a-b)",
+    "name": "Congruence",
+    "use": "expressing that two integers have the same remainder",
+    "condition": "The modulus m is a positive integer and a,b are integers."
+  },
+  {
+    "lessonId": "diophantine",
+    "tex": "xy+ax+by+ab=(x+b)(y+a)",
+    "name": "Completing a product",
+    "use": "turning a two-variable integer equation into factor pairs",
+    "condition": "The identity is algebraic; count only factor pairs meeting the original integer and sign restrictions."
+  },
+  {
+    "lessonId": "bases",
+    "tex": "(d_k\\cdots d_0)_b=\\sum_{j=0}^k d_jb^j",
+    "name": "Place value",
+    "use": "interpreting a numeral in an integer base",
+    "condition": "b is at least 2, digits lie from zero through b-1, and the leading digit is nonzero for a fixed-length numeral."
+  },
+  {
+    "lessonId": "floor",
+    "tex": "\\lfloor x\\rfloor=n\\iff n\\le x<n+1",
+    "name": "Floor interval",
+    "use": "replacing a floor equation by a half-open interval",
+    "condition": "n is an integer and x is real."
+  },
+  {
+    "lessonId": "angles",
+    "tex": "A+B+C=180^\\circ",
+    "name": "Triangle angle sum",
+    "use": "connecting the three interior angles of a Euclidean triangle",
+    "condition": "A,B,C are interior angles of a nondegenerate triangle, measured in degrees."
+  },
+  {
+    "lessonId": "triangle-area",
+    "tex": "K=\\frac12bh",
+    "name": "Triangle area",
+    "use": "measuring a triangle with a base and its perpendicular height",
+    "condition": "h is the altitude to the line containing base b, not generally a slanted side."
+  },
+  {
+    "lessonId": "right-triangles",
+    "tex": "a^2+b^2=c^2",
+    "name": "Pythagorean theorem",
+    "use": "finding a missing side of a right triangle",
+    "condition": "a,b are legs and c is the hypotenuse opposite the right angle."
+  },
+  {
+    "lessonId": "similarity",
+    "tex": "\\frac{K_2}{K_1}=\\left(\\frac{\\ell_2}{\\ell_1}\\right)^2",
+    "name": "Similarity area scale",
+    "use": "converting corresponding length ratios into area ratios",
+    "condition": "The two figures are similar and the lengths correspond."
+  },
+  {
+    "lessonId": "quadrilaterals",
+    "tex": "K=\\frac{(a+b)h}{2}",
+    "name": "Trapezoid area",
+    "use": "measuring a trapezoid using its two parallel bases and height",
+    "condition": "a,b are the parallel base lengths and h is their perpendicular separation."
+  },
+  {
+    "lessonId": "circles",
+    "tex": "K_{\\mathrm{sector}}=\\frac{\\theta}{360^\\circ}\\pi r^2",
+    "name": "Sector area",
+    "use": "finding the fraction of a circle occupied by a sector",
+    "condition": "The central angle theta is in degrees and r is the circle radius."
+  },
+  {
+    "lessonId": "circle-power",
+    "tex": "PT^2=PA\\cdot PB",
+    "name": "Tangent–secant power",
+    "use": "connecting a tangent to an exterior-and-whole secant product",
+    "condition": "P is outside the circle, T is the tangency point, and A,B are near and far intersections on one secant ray."
+  },
+  {
+    "lessonId": "polygons",
+    "tex": "D=\\frac{n(n-3)}2",
+    "name": "Polygon diagonal count",
+    "use": "counting diagonals in a convex polygon",
+    "condition": "n is the number of vertices, with n at least 3; each unordered diagonal is counted once."
+  },
+  {
+    "lessonId": "coordinates",
+    "tex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+    "name": "Coordinate distance",
+    "use": "finding the distance between two points in the plane",
+    "condition": "The coordinate axes are perpendicular and use the same distance unit."
+  },
+  {
+    "lessonId": "solids",
+    "tex": "V_{\\mathrm{cone}}=\\frac13\\pi r^2h",
+    "name": "Cone volume",
+    "use": "measuring the volume of a cone",
+    "condition": "r is the base radius and h is perpendicular height, not slant height."
+  },
+  {
+    "lessonId": "composite",
+    "tex": "[A\\cup B]=[A]+[B]-[A\\cap B]",
+    "name": "Area union",
+    "use": "combining two overlapping measurable planar regions",
+    "condition": "The intersection is included in both individual areas and removed once."
+  },
+  {
+    "lessonId": "counting",
+    "tex": "N=a_1a_2\\cdots a_k",
+    "name": "Product rule",
+    "use": "counting outcomes built through stages with fixed numbers of choices",
+    "condition": "At stage j, every permitted earlier choice allows a_j continuations."
+  },
+  {
+    "lessonId": "permutations",
+    "tex": "N=\\frac{n!}{a_1!\\cdots a_k!}",
+    "name": "Multiset arrangements",
+    "use": "ordering objects with repeated identical types",
+    "condition": "The multiplicities a_1 through a_k sum to n; objects of a type are indistinguishable."
+  },
+  {
+    "lessonId": "combinations",
+    "tex": "\\binom nk=\\frac{n!}{k!(n-k)!}",
+    "name": "Combinations",
+    "use": "selecting k distinct objects without order from n objects",
+    "condition": "n,k are integers with 0≤k≤n and the original n objects are distinct."
+  },
+  {
+    "lessonId": "inclusion",
+    "tex": "|A\\cup B|=|A|+|B|-|A\\cap B|",
+    "name": "Two-set inclusion–exclusion",
+    "use": "counting members in at least one of two finite sets",
+    "condition": "The intersection consists of members counted in both individual sets."
+  },
+  {
+    "lessonId": "stars-bars",
+    "tex": "N=\\binom{n+k-1}{k-1}",
+    "name": "Stars and bars",
+    "use": "distributing n identical objects into k labeled boxes allowing empty boxes",
+    "condition": "n is nonnegative and k is positive; there are no upper bounds on box counts."
+  },
+  {
+    "lessonId": "geometric-counting",
+    "tex": "N=\\binom{a+b}{a}",
+    "name": "Monotone paths",
+    "use": "counting unit right/up paths from the origin to (a,b)",
+    "condition": "a,b are nonnegative integers and there are no forbidden vertices or edges."
+  },
+  {
+    "lessonId": "recurrence",
+    "tex": "f(n)=f(n-1)+f(n-2)",
+    "name": "One-or-two-step recurrence",
+    "use": "counting stair climbs whose last step has length one or two",
+    "condition": "Use f(0)=f(1)=1 and the recurrence for n≥2; the cases are disjoint and exhaustive."
+  },
+  {
+    "lessonId": "probability",
+    "tex": "P(A)=\\frac{|A|}{|\\Omega|}",
+    "name": "Finite uniform probability",
+    "use": "turning a favorable-outcome count into a probability",
+    "condition": "The elementary outcomes in the finite sample space are equally likely."
+  },
+  {
+    "lessonId": "conditional",
+    "tex": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}",
+    "name": "Conditional probability",
+    "use": "restricting a probability calculation to an observed event B",
+    "condition": "P(B) is positive; independence is not assumed."
+  },
+  {
+    "lessonId": "geometric-probability",
+    "tex": "P(A)=\\frac{\\operatorname{area}(A)}{\\operatorname{area}(\\Omega)}",
+    "name": "Uniform area probability",
+    "use": "measuring a probability through a favorable region",
+    "condition": "The point is uniform on a finite positive-area region and A lies inside it."
+  },
+  {
+    "lessonId": "expectation",
+    "tex": "E[X_1+\\cdots+X_n]=\\sum_{j=1}^n E[X_j]",
+    "name": "Linearity of expectation",
+    "use": "finding the average of a sum of random contributions",
+    "condition": "The expectations exist; the random variables do not need to be independent."
+  },
+  {
+    "lessonId": "invariants",
+    "tex": "I(\\text{after})=I(\\text{before})",
+    "name": "Invariant",
+    "use": "certifying that every allowed move preserves a chosen quantity",
+    "condition": "The equality must hold for every legal move, not only selected examples."
+  },
+  {
+    "lessonId": "extremal",
+    "tex": "\\max_j n_j\\ge\\left\\lceil\\frac Nk\\right\\rceil",
+    "name": "General pigeonhole bound",
+    "use": "guaranteeing a crowded box when N objects occupy k boxes",
+    "condition": "The k boxes partition the objects, k is positive, and their sizes sum to N."
+  },
+  {
+    "lessonId": "logarithms",
+    "tex": "\\log_bx=\\frac{\\log_cx}{\\log_cb}",
+    "name": "Change of base",
+    "use": "expressing a logarithm using a different common base",
+    "condition": "x>0; b,c are positive and neither base equals one."
+  },
+  {
+    "lessonId": "trigonometry",
+    "tex": "\\sin2\\theta=2\\sin\\theta\\cos\\theta",
+    "name": "Sine double angle",
+    "use": "connecting a doubled angle to a product of sine and cosine",
+    "condition": "The angle uses one consistent unit; the identity holds for every real angle."
+  },
+  {
+    "lessonId": "trig-geometry",
+    "tex": "c^2=a^2+b^2-2ab\\cos C",
+    "name": "Cosine law",
+    "use": "relating two sides and their included angle to the third side",
+    "condition": "C is the angle between sides a and b and is opposite side c."
+  },
+  {
+    "lessonId": "complex",
+    "tex": "z\\overline z=|z|^2=a^2+b^2",
+    "name": "Complex conjugate product",
+    "use": "converting a complex product into a real squared magnitude",
+    "condition": "z=a+bi with real a,b; its conjugate is a-bi."
+  },
+  {
+    "lessonId": "binomial",
+    "tex": "(a+b)^n=\\sum_{k=0}^n\\binom nk a^{n-k}b^k",
+    "name": "Binomial theorem",
+    "use": "finding terms and coefficients in a power of a two-term sum",
+    "condition": "n is a nonnegative integer; k counts the factors contributing the second term."
+  },
+  {
+    "lessonId": "algebra-transformations",
+    "tex": "x^3+y^3=(x+y)^3-3xy(x+y)",
+    "name": "Symmetric cubic reduction",
+    "use": "finding a cubic power sum from the sum and product of two variables",
+    "condition": "The variables lie in a field of characteristic zero; for this course they are real or complex."
+  },
+  {
+    "lessonId": "algebra-transformations",
+    "tex": "P_n=sP_{n-1}-pP_{n-2}",
+    "name": "Two-root power-sum recurrence",
+    "use": "recovering higher powers of two roots with sum s and product p",
+    "condition": "$P_0=2$, $P_1=s$, and $n\\ge2$; both roots satisfy $t^2-st+p=0$."
+  },
+  {
+    "lessonId": "algebra-transformations",
+    "tex": "(x+b)(y+a)=xy+ax+by+ab",
+    "name": "Completed product",
+    "use": "converting a mixed two-variable integer equation into factor pairs",
+    "condition": "After undoing the shifts, every factor pair must satisfy the original sign and integer restrictions."
+  },
+  {
+    "lessonId": "algebra-transformations",
+    "tex": "a^4+4b^4=(a^2-2ab+2b^2)(a^2+2ab+2b^2)",
+    "name": "Sophie Germain factorization",
+    "use": "factoring a fourth-power sum by completing a square",
+    "condition": "The identity is algebraic; a primality conclusion additionally requires both integer factors to exceed one."
+  },
+  {
+    "lessonId": "polynomial-structure",
+    "tex": "P(t)=A\\prod_{i=1}^n(t-r_i)",
+    "name": "Root factorization",
+    "use": "evaluating a product involving every polynomial root with the same shift",
+    "condition": "$A$ is the leading coefficient; roots are counted with multiplicity and signs match $t-r_i$."
+  },
+  {
+    "lessonId": "polynomial-structure",
+    "tex": "\\frac1a+\\frac1b+\\frac1c=\\frac{ab+bc+ca}{abc}",
+    "name": "Reciprocal-root sum",
+    "use": "recovering a reciprocal sum from a cubic’s elementary symmetric sums",
+    "condition": "All three roots are nonzero."
+  },
+  {
+    "lessonId": "polynomial-structure",
+    "tex": "P(t)=D(t)Q(t)+R(t),\\quad\\deg R<\\deg D",
+    "name": "Polynomial division",
+    "use": "replacing a large polynomial by a smaller remainder",
+    "condition": "$D$ is a nonzero polynomial; at a root $u$ of $D$, $P(u)=R(u)$."
+  },
+  {
+    "lessonId": "polynomial-structure",
+    "tex": "P_{\\mathrm{even}}(t)=\\frac{P(t)+P(-t)}2",
+    "name": "Even-part projection",
+    "use": "isolating the even powers of a polynomial",
+    "condition": "The coefficient field has characteristic different from two; the odd part uses subtraction instead."
+  },
+  {
+    "lessonId": "sequence-synthesis",
+    "tex": "a_n-c=r^{n-1}(a_1-c)",
+    "name": "Affine recurrence shift",
+    "use": "solving a recurrence after subtracting its fixed point",
+    "condition": "The update is $a_{n+1}=ra_n+s$, $r\\ne1$, and $c=s/(1-r)$."
+  },
+  {
+    "lessonId": "sequence-synthesis",
+    "tex": "\\frac1{k(k+h)}=\\frac1h\\left(\\frac1k-\\frac1{k+h}\\right)",
+    "name": "Shifted telescoping identity",
+    "use": "decomposing a rational sequence into canceling terms",
+    "condition": "h, k, and k+h are nonzero."
+  },
+  {
+    "lessonId": "sequence-synthesis",
+    "tex": "\\sum_{k=0}^{n-1}r^k=\\frac{1-r^n}{1-r}",
+    "name": "Finite geometric sum",
+    "use": "summing equally spaced powers with their finite endpoint",
+    "condition": "n is a positive integer and r≠1; for r=1 the sum is n."
+  },
+  {
+    "lessonId": "sequence-synthesis",
+    "tex": "b^2=ac",
+    "name": "Geometric triple condition",
+    "use": "connecting three consecutive nonzero geometric terms",
+    "condition": "$a$ and $b$ are nonzero and $b/a=c/b$; additional sign or order conditions still apply."
+  },
+  {
+    "lessonId": "integer-constraints",
+    "tex": "xy+ax+by+ab=(x+b)(y+a)",
+    "name": "Product completion",
+    "use": "turning a bilinear integer equation into a divisor problem",
+    "condition": "Translate sign, order, and nonzero restrictions to the shifted factors."
+  },
+  {
+    "lessonId": "integer-constraints",
+    "tex": "\\gcd(x,y)\\operatorname{lcm}(x,y)=xy",
+    "name": "Gcd–lcm product",
+    "use": "recovering a product from gcd and lcm data",
+    "condition": "x and y are positive integers; reduced factors after dividing by the gcd are coprime."
+  },
+  {
+    "lessonId": "integer-constraints",
+    "tex": "x^2-y^2=(x-y)(x+y)",
+    "name": "Difference-of-squares factors",
+    "use": "parametrizing integer solutions by factor pairs",
+    "condition": "The two factors must have the same parity to recover integer x and y."
+  },
+  {
+    "lessonId": "integer-constraints",
+    "tex": "v_p(n^k)=k\\,v_p(n)",
+    "name": "Perfect-power exponents",
+    "use": "translating square and cube constraints into exponent congruences",
+    "condition": "p is prime; n is a positive integer and k is a positive integer."
+  },
+  {
+    "lessonId": "congruence-systems",
+    "tex": "ax\\equiv b\\pmod m\\iff x\\equiv a^{-1}b\\pmod m",
+    "name": "Inverse cancellation",
+    "use": "solving a linear congruence without changing its modulus",
+    "condition": "$\\gcd(a,m)=1$."
+  },
+  {
+    "lessonId": "congruence-systems",
+    "tex": "ax\\equiv b\\pmod m\\iff (a/d)x\\equiv b/d\\pmod{m/d}",
+    "name": "Common-factor reduction",
+    "use": "reducing a linear congruence with a noninvertible coefficient",
+    "condition": "$d$ divides $a,b,m$; solvability requires $\\gcd(a,m)$ to divide $b$."
+  },
+  {
+    "lessonId": "congruence-systems",
+    "tex": "a^{p-1}\\equiv1\\pmod p",
+    "name": "Fermat exponent reduction",
+    "use": "reducing powers modulo a prime",
+    "condition": "p is prime and p does not divide a; the converse primality claim is false."
+  },
+  {
+    "lessonId": "congruence-systems",
+    "tex": "x\\equiv a\\pmod m,\\ x\\equiv b\\pmod n\\Rightarrow a\\equiv b\\pmod{\\gcd(m,n)}",
+    "name": "Congruence compatibility",
+    "use": "checking whether two residue prescriptions can coexist",
+    "condition": "For integers $m,n>0$ this compatibility condition is also sufficient; the period is $\\operatorname{lcm}(m,n)$."
+  },
+  {
+    "lessonId": "valuations-divisors",
+    "tex": "v_p(n!)=\\sum_{j\\ge1}\\left\\lfloor n/p^j\\right\\rfloor",
+    "name": "Factorial valuation",
+    "use": "counting the copies of a prime inside a factorial",
+    "condition": "p is prime and n is a nonnegative integer; only finitely many terms are nonzero."
+  },
+  {
+    "lessonId": "valuations-divisors",
+    "tex": "\\tau(n)=\\prod_i(a_i+1)",
+    "name": "Divisor count",
+    "use": "counting positive divisors from independent exponent choices",
+    "condition": "$n=\\prod_i p_i^{a_i}$ is its prime factorization."
+  },
+  {
+    "lessonId": "valuations-divisors",
+    "tex": "\\sigma(n)=\\prod_i(1+p_i+\\cdots+p_i^{a_i})",
+    "name": "Divisor sum",
+    "use": "summing positive divisors by expanding independent prime-power choices",
+    "condition": "The $p_i$ are distinct primes in the factorization of $n$."
+  },
+  {
+    "lessonId": "valuations-divisors",
+    "tex": "z_B(N)=\\min_{p^a\\parallel B}\\left\\lfloor v_p(N)/a\\right\\rfloor",
+    "name": "Trailing-zero bottleneck",
+    "use": "counting terminal zeros in an arbitrary integer base",
+    "condition": "$B\\ge2$ and $N$ is a positive integer; $p^a$ is the full prime power in the base."
+  },
+  {
+    "lessonId": "geometric-constructions",
+    "tex": "K=\\tfrac12 bh",
+    "name": "Base–height area",
+    "use": "transferring a known triangle area to a different altitude",
+    "condition": "h is perpendicular to the line containing the chosen base b."
+  },
+  {
+    "lessonId": "geometric-constructions",
+    "tex": "b^2m+c^2n=a(d^2+mn)",
+    "name": "Stewart’s cevian identity",
+    "use": "finding a general cevian length after its base segments are known",
+    "condition": "$a=m+n=BC$, $b=CA$, $c=AB$, $m=BD$, $n=DC$, and $d=AD$."
+  },
+  {
+    "lessonId": "geometric-constructions",
+    "tex": "m_a^2=\\frac{2b^2+2c^2-a^2}{4}",
+    "name": "Median length",
+    "use": "finding a median by extending it to a parallelogram diagonal",
+    "condition": "$a,b,c$ are triangle side lengths and $m_a$ reaches the midpoint of side $a$."
+  },
+  {
+    "lessonId": "geometric-constructions",
+    "tex": "AP+PB=A\\prime P+PB\\ge A\\prime B",
+    "name": "Reflected-path bound",
+    "use": "minimizing a broken path constrained to a mirror line",
+    "condition": "A′ is the reflection of A; P lies on the mirror, and equality needs the straight segment A′B to meet the permitted set."
+  },
+  {
+    "lessonId": "ratio-geometry",
+    "tex": "K_1/K_2=(\\ell_1/\\ell_2)^2",
+    "name": "Similar-area scaling",
+    "use": "converting a similarity length scale into an area ratio",
+    "condition": "The triangles or figures are similar, and the lengths correspond."
+  },
+  {
+    "lessonId": "ratio-geometry",
+    "tex": "BD/DC=AB/AC",
+    "name": "Angle-bisector ratio",
+    "use": "locating the opposite-side intersection of an internal angle bisector",
+    "condition": "D lies on BC and AD bisects angle BAC."
+  },
+  {
+    "lessonId": "ratio-geometry",
+    "tex": "AP/PD=m_D/m_A",
+    "name": "Cevian balance",
+    "use": "recovering an intersection ratio from consistent endpoint masses",
+    "condition": "The masses at A and D balance at P and satisfy all other side ratios."
+  },
+  {
+    "lessonId": "ratio-geometry",
+    "tex": "\\frac{AD}{DB}\\frac{BE}{EC}\\frac{CF}{FA}=1",
+    "name": "Menelaus transversal",
+    "use": "relating three side ratios on a line crossing a triangle",
+    "condition": "D,E,F are collinear; use the appropriate external-point configuration or signed lengths."
+  },
+  {
+    "lessonId": "circle-synthesis",
+    "tex": "PA\\cdot PB=PC\\cdot PD=PT^2",
+    "name": "External point power",
+    "use": "connecting two secants or a secant and a tangent",
+    "condition": "A,B and C,D are near/far intersections from the same external point P; T is a tangency point."
+  },
+  {
+    "lessonId": "circle-synthesis",
+    "tex": "PA\\cdot PB=R^2-OP^2",
+    "name": "Interior chord power",
+    "use": "connecting a chord through an interior point to its center distance",
+    "condition": "P lies inside the circle between A and B; lengths are positive."
+  },
+  {
+    "lessonId": "circle-synthesis",
+    "tex": "AC\\cdot BD=AB\\cdot CD+BC\\cdot DA",
+    "name": "Ptolemy’s identity",
+    "use": "recovering a diagonal in a cyclic quadrilateral",
+    "condition": "A,B,C,D occur in that order on one circle."
+  },
+  {
+    "lessonId": "circle-synthesis",
+    "tex": "K=rs=\\frac{abc}{4R}",
+    "name": "Triangle circle-area identities",
+    "use": "connecting triangle area with its inradius or circumradius",
+    "condition": "r is the inradius, R the circumradius, s the semiperimeter, and a,b,c the side lengths."
+  },
+  {
+    "lessonId": "coordinate-lattice",
+    "tex": "K=\\tfrac12|ad-bc|",
+    "name": "Triangle determinant",
+    "use": "finding area from two edge vectors without perpendicular heights",
+    "condition": "The vectors share the same initial vertex."
+  },
+  {
+    "lessonId": "coordinate-lattice",
+    "tex": "B=\\sum_{\\text{edges}}\\gcd(|\\Delta x|,|\\Delta y|)",
+    "name": "Lattice boundary count",
+    "use": "counting boundary lattice points without double-counting vertices",
+    "condition": "The polygon is closed and every vertex has integer coordinates."
+  },
+  {
+    "lessonId": "coordinate-lattice",
+    "tex": "K=I+\\frac B2-1",
+    "name": "Pick’s theorem",
+    "use": "connecting polygon area with interior and boundary lattice points",
+    "condition": "The polygon is simple with lattice vertices."
+  },
+  {
+    "lessonId": "coordinate-lattice",
+    "tex": "(x,y)\\mapsto(-y,x)",
+    "name": "Counterclockwise quarter-turn",
+    "use": "rotating a point ninety degrees about the origin",
+    "condition": "For another center, translate to the center first and translate back afterward."
+  },
+  {
+    "lessonId": "spatial-geometry",
+    "tex": "d^2=a^2+b^2+c^2",
+    "name": "Space diagonal",
+    "use": "measuring the straight diagonal of a rectangular box",
+    "condition": "a,b,c are mutually perpendicular edge lengths; this is not a surface path."
+  },
+  {
+    "lessonId": "spatial-geometry",
+    "tex": "V_1/V_2=k^3",
+    "name": "Similar-solid volume scaling",
+    "use": "converting a common length scale into a volume ratio",
+    "condition": "The solids are similar and k is the ratio of corresponding lengths."
+  },
+  {
+    "lessonId": "spatial-geometry",
+    "tex": "V_{\\rm frustum}=\\frac{\\pi h}{3}(R^2+Rr+r^2)",
+    "name": "Conical frustum volume",
+    "use": "finding volume between two parallel circular sections of a cone",
+    "condition": "R and r are the section radii and h is their perpendicular separation."
+  },
+  {
+    "lessonId": "spatial-geometry",
+    "tex": "\\Delta h=V_{\\rm displaced}/A",
+    "name": "Displacement height",
+    "use": "finding a water-level rise in a vessel with constant horizontal area",
+    "condition": "A is constant over the level change, with no spilling and the stated submerged volume."
+  },
+  {
+    "lessonId": "constrained-counting",
+    "tex": "\\binom{n-k+1}{k}",
+    "name": "Separated-position count",
+    "use": "choosing k nonadjacent positions from a linear row of n",
+    "condition": "$n\\ge2k-1$; positions are distinct and adjacency is linear, not circular."
+  },
+  {
+    "lessonId": "constrained-counting",
+    "tex": "\\binom{N+r-1}{r-1}",
+    "name": "Nonnegative composition count",
+    "use": "distributing N identical units among r labeled coordinates",
+    "condition": "$N\\ge0$ and $r\\ge1$; additional upper bounds require exclusions."
+  },
+  {
+    "lessonId": "constrained-counting",
+    "tex": "|A\\cup B\\cup C|=|A|+|B|+|C|-|A\\cap B|-|A\\cap C|-|B\\cap C|+|A\\cap B\\cap C|",
+    "name": "Three-set inclusion–exclusion",
+    "use": "correcting overlapping forbidden events",
+    "condition": "All sets are subsets of the same finite universe."
+  },
+  {
+    "lessonId": "constrained-counting",
+    "tex": "\\#\\text{orbits}=\\frac1{|G|}\\sum_{g\\in G}|\\operatorname{Fix}(g)|",
+    "name": "Fixed-point orbit average",
+    "use": "counting arrangements under a specified finite symmetry group",
+    "condition": "G acts on the finite set of labeled arrangements; count only the symmetries actually identified."
+  },
+  {
+    "lessonId": "combinatorial-identities",
+    "tex": "k\\binom nk=n\\binom{n-1}{k-1}",
+    "name": "Marked-element identity",
+    "use": "reversing the order of selecting a subset and one member of it",
+    "condition": "$1\\le k\\le n$; the marked element belongs to the subset."
+  },
+  {
+    "lessonId": "combinatorial-identities",
+    "tex": "\\sum_k\\binom ak\\binom b{r-k}=\\binom{a+b}r",
+    "name": "Vandermonde identity",
+    "use": "combining fixed-size selections from two disjoint groups",
+    "condition": "a,b are nonnegative integers; impossible binomial choices count as zero."
+  },
+  {
+    "lessonId": "combinatorial-identities",
+    "tex": "\\sum_{k=r}^{n}\\binom kr=\\binom{n+1}{r+1}",
+    "name": "Hockey-stick identity",
+    "use": "summing binomial choices partitioned by their largest selected element",
+    "condition": "$n\\ge r\\ge0$; preserve the one-step shift in both indices."
+  },
+  {
+    "lessonId": "combinatorial-identities",
+    "tex": "C_n=\\binom{2n}n-\\binom{2n}{n-1}",
+    "name": "Diagonal-path reflection count",
+    "use": "counting balanced lattice paths that never cross above the diagonal",
+    "condition": "Paths use n east and n north steps from the origin; the boundary itself is allowed."
+  },
+  {
+    "lessonId": "probability-states",
+    "tex": "P(A\\mid B)=P(A\\cap B)/P(B)",
+    "name": "Conditional probability",
+    "use": "updating a probability after restricting to an observed event",
+    "condition": "$P(B)>0$; the conditioned sample space is $B$."
+  },
+  {
+    "lessonId": "probability-states",
+    "tex": "P(A)=\\sum_iP(B_i)P(A\\mid B_i)",
+    "name": "Total probability",
+    "use": "combining disjoint conditional branches of an experiment",
+    "condition": "The $B_i$ form a partition, and branches with zero probability contribute zero."
+  },
+  {
+    "lessonId": "probability-states",
+    "tex": "E_s=1+\\sum_t p_{st}E_t",
+    "name": "First-step waiting equation",
+    "use": "finding expected remaining trials from a sufficient state",
+    "condition": "One trial is counted now; absorbing states have zero remaining expectation and the expected absorption time is finite."
+  },
+  {
+    "lessonId": "probability-states",
+    "tex": "\\mathbb E[\\sum_i I_i]=\\sum_iP(I_i=1)",
+    "name": "Indicator expectation",
+    "use": "finding an expected count without its full distribution",
+    "condition": "The $I_i$ are indicator variables; independence is not required."
+  },
+  {
+    "lessonId": "invariant-extremal",
+    "tex": "\\max_i a_i\\ge\\frac1n\\sum_i a_i",
+    "name": "Average lower bound",
+    "use": "forcing at least one local quantity to be large",
+    "condition": "The $a_i$ are real; equality for the maximum requires all values to equal the average."
+  },
+  {
+    "lessonId": "invariant-extremal",
+    "tex": "\\left\\lceil N/k\\right\\rceil",
+    "name": "Pigeonhole occupancy bound",
+    "use": "guaranteeing a large group when N objects occupy k groups",
+    "condition": "k is a positive integer and the groups cover all objects."
+  },
+  {
+    "lessonId": "invariant-extremal",
+    "tex": "\\gcd(a,b)=\\gcd(a-b,b)",
+    "name": "Subtractive gcd invariant",
+    "use": "tracking the final equal entries in Euclidean subtraction",
+    "condition": "$a,b$ are positive integers with $a\\ge b$; repeated unequal steps decrease their sum."
+  },
+  {
+    "lessonId": "invariant-extremal",
+    "tex": "(a+b+ab)+1=(a+1)(b+1)",
+    "name": "Shifted-product merge",
+    "use": "finding an invariant for a nonlinear pair replacement",
+    "condition": "The replacement removes $a,b$ and inserts $a+b+ab$; multiply one plus every current entry."
+  },
+  {
+    "lessonId": "inequalities-domains",
+    "tex": "\\frac{a_1+\\cdots+a_n}{n}\\ge(a_1\\cdots a_n)^{1/n}",
+    "name": "Arithmetic–geometric mean",
+    "use": "bounding a positive product by a fixed sum or a sum by a fixed product",
+    "condition": "The $a_i$ are nonnegative; equality holds when all are equal."
+  },
+  {
+    "lessonId": "inequalities-domains",
+    "tex": "(\\sum x_i)(\\sum 1/x_i)\\ge n^2",
+    "name": "Reciprocal Cauchy bound",
+    "use": "bounding a reciprocal sum when the original positive sum is fixed",
+    "condition": "Every $x_i$ is positive; equality requires all $x_i$ equal."
+  },
+  {
+    "lessonId": "inequalities-domains",
+    "tex": "|x-a|+|x-b|\\ge|a-b|",
+    "name": "Line-distance bound",
+    "use": "minimizing a sum of distances to two points on a line",
+    "condition": "Equality holds exactly when x lies between a and b, including the endpoints."
+  },
+  {
+    "lessonId": "inequalities-domains",
+    "tex": "\\Delta=b^2-4ac",
+    "name": "Quadratic discriminant",
+    "use": "checking whether a quadratic has distinct real roots before imposing root signs",
+    "condition": "$a\\ne0$; $\\Delta>0$ means two distinct real roots, while $\\Delta=0$ gives a repeated root."
+  },
+  {
+    "lessonId": "log-trig-synthesis",
+    "tex": "\\log_a b=\\frac{\\log_c b}{\\log_c a}",
+    "name": "Change of base",
+    "use": "expressing several logarithms with one shared base",
+    "condition": "a,b,c are positive and a,c are not one."
+  },
+  {
+    "lessonId": "log-trig-synthesis",
+    "tex": "\\sin(2\\theta)=2\\sin\\theta\\cos\\theta",
+    "name": "Sine double angle",
+    "use": "factoring a multiple-angle equation or recovering a sine-cosine product",
+    "condition": "Valid for all real θ; division by a factor still needs a nonzero check."
+  },
+  {
+    "lessonId": "log-trig-synthesis",
+    "tex": "\\cos(2\\theta)=\\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta}",
+    "name": "Tangent-based double angle",
+    "use": "computing a cosine double angle from a known tangent",
+    "condition": "tanθ must be defined."
+  },
+  {
+    "lessonId": "log-trig-synthesis",
+    "tex": "\\max_\\theta(a\\sin\\theta+b\\cos\\theta)=\\sqrt{a^2+b^2}",
+    "name": "Trigonometric amplitude",
+    "use": "optimizing a real sine-cosine linear combination",
+    "condition": "θ ranges over all real angles; a restricted interval may exclude the equality point."
+  },
+  {
+    "lessonId": "complex-roots-unity",
+    "tex": "\\frac1z=\\frac{\\overline z}{|z|^2}",
+    "name": "Conjugate reciprocal",
+    "use": "replacing complex division with conjugation and a real scale",
+    "condition": "$z\\ne0$; for $|z|=1$ the reciprocal equals the conjugate."
+  },
+  {
+    "lessonId": "complex-roots-unity",
+    "tex": "z\\mapsto c+e^{i\\theta}(z-c)",
+    "name": "Complex rotation about a center",
+    "use": "rotating a point while preserving its distance from c",
+    "condition": "θ is the counterclockwise angle in radians; c is the fixed center."
+  },
+  {
+    "lessonId": "complex-roots-unity",
+    "tex": "\\prod_{k=0}^{n-1}(t-\\omega^k)=t^n-1",
+    "name": "Unity-root factorization",
+    "use": "evaluating symmetric products over all nth roots of unity",
+    "condition": "ω has exact order n, so its powers enumerate every root once."
+  },
+  {
+    "lessonId": "complex-roots-unity",
+    "tex": "\\frac1m\\sum_{j=0}^{m-1}\\omega^{jk}=\\begin{cases}1&m\\mid k\\\\0&m\\nmid k\\end{cases}",
+    "name": "Roots-of-unity filter",
+    "use": "retaining polynomial coefficients in an exponent residue class",
+    "condition": "ω has exact order m; k is an integer."
+  }
+]

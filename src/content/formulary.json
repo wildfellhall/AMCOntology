@@ -1,0 +1,1424 @@
+[
+  {
+    "id": "circular",
+    "title": "Circular arrangements",
+    "domain": "Counting & probability",
+    "section": "1.2",
+    "formula": "(n-1)!",
+    "condition": "Distinct objects on a circle; rotations are equivalent and reflections remain distinct.",
+    "lesson": "permutations",
+    "scene": "circle",
+    "example": "1.2",
+    "prompt": "Six physicists sit around a circular table. Three are mutual enemies and no two enemies may be adjacent. How many arrangements are possible, with rotations identified?",
+    "derivation": [
+      {
+        "title": "Begin with a row",
+        "math": "n!",
+        "text": "Label every seat temporarily. The first seat has n choices, the next n−1, and so on.",
+        "diagram": "Six labeled seats distinguish rotations."
+      },
+      {
+        "title": "Identify rotations",
+        "math": "\\frac{n!}{n}",
+        "text": "Each circular arrangement appears n times in the labeled-seat count, once for each possible position of a fixed person.",
+        "diagram": "The same circular order rotates through the seats."
+      },
+      {
+        "title": "Fix an anchor",
+        "math": "\\frac{n!}{n}=(n-1)!",
+        "text": "Equivalently, keep one person at the top and permute the others. No rotational duplication remains.",
+        "diagram": "One seat becomes the fixed anchor."
+      },
+      {
+        "title": "Check the symmetry",
+        "math": "\\text{reflections remain distinct}",
+        "text": "Clockwise and counterclockwise orders generally differ. Divide by two only when the problem explicitly identifies reflections and no stabilizer changes the count.",
+        "diagram": "The orientation is retained."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Force alternation",
+        "math": "E\\,F\\,E\\,F\\,E\\,F",
+        "text": "The three enemies need three separating friends. With only six people, enemies and friends must alternate.",
+        "diagram": "Enemy seats alternate with friend seats."
+      },
+      {
+        "title": "Anchor a friend",
+        "math": "2!",
+        "text": "Fix Gauss at the top to remove rotations. Arrange the other two friends in the two remaining friend seats.",
+        "diagram": "Gauss is fixed; two friend seats remain."
+      },
+      {
+        "title": "Place the enemies",
+        "math": "3!",
+        "text": "Each of the three enemy seats is separated from the others. All six permutations of the enemies now work.",
+        "diagram": "Three separated seats receive the enemies."
+      },
+      {
+        "title": "Combine the choices",
+        "math": "2!\\cdot3!=12",
+        "text": "The choices are independent, and the fixed anchor makes each arrangement unique.",
+        "diagram": "There are twelve circular arrangements."
+      }
+    ],
+    "trap": "Dividing by six after already fixing an anchor removes the same rotational duplication twice.",
+    "check": "Why must there be exactly one friend between consecutive enemies?",
+    "answer": "There are three gaps between enemies and exactly three friends. Every gap must receive at least one friend, so each receives exactly one.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "1.2",
+      "page": 1
+    },
+    "exampleSource": {
+      "id": "example-1.2",
+      "page": 12,
+      "attribution": "Example 1.2 (Omega Learn)",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "stars-bars",
+    "title": "Stars, bars & upper bounds",
+    "domain": "Counting & probability",
+    "section": "1.13",
+    "formula": "\\#\\{x_1+\\cdots+x_k=N\\}=\\binom{N+k-1}{k-1}",
+    "condition": "The variables are nonnegative integers; the bins are distinguishable. Upper bounds require extra work.",
+    "lesson": "stars-bars",
+    "scene": "bars",
+    "example": "5.4",
+    "prompt": "In how many ordered outcomes of five ordinary six-sided dice is the sum 24?",
+    "derivation": [
+      {
+        "title": "Encode a distribution",
+        "math": "x_1+\\cdots+x_k=N",
+        "text": "Write N stars in a row. Insert k−1 separators; the stars between successive separators give each variable.",
+        "diagram": "Stars are separated into labeled bins."
+      },
+      {
+        "title": "Choose separator positions",
+        "math": "N+k-1\\text{ positions}",
+        "text": "Stars and bars occupy N+k−1 positions. Bars may be consecutive, representing an empty bin.",
+        "diagram": "Separator positions become the objects being chosen."
+      },
+      {
+        "title": "Count the encodings",
+        "math": "\\binom{N+k-1}{k-1}",
+        "text": "Choose the positions of the bars. Every nonnegative solution has one encoding and every encoding has one solution.",
+        "diagram": "Every arrangement corresponds to one distribution."
+      },
+      {
+        "title": "Handle restrictions",
+        "math": "x_i\\ge a_i\\ \\Longrightarrow\\ y_i=x_i-a_i",
+        "text": "Subtract lower bounds first. For upper bounds, subtract invalid encodings with inclusion–exclusion; stars and bars alone does not enforce them.",
+        "diagram": "Shifting a lower bound frees the remaining stars."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Count missing pips",
+        "math": "y_i=6-d_i,\\qquad \\sum y_i=6",
+        "text": "A total of 30 would mean all sixes. A total of 24 has six missing pips, with each deficit between zero and five.",
+        "diagram": "Six deficit stars are placed in five bins."
+      },
+      {
+        "title": "Temporarily ignore the ceiling",
+        "math": "\\binom{6+5-1}{4}=210",
+        "text": "Count all nonnegative deficit vectors. These include vectors with a deficit of six, which would mean a die showing zero.",
+        "diagram": "Four separators among ten positions give 210 encodings."
+      },
+      {
+        "title": "Remove impossible dice",
+        "math": "5\\binom{4}{4}=5",
+        "text": "If one deficit is at least six, all six missing pips are on that die. There are five such vectors; two cannot occur together.",
+        "diagram": "The five all-in-one-bin cases are crossed out."
+      },
+      {
+        "title": "Return to ordered outcomes",
+        "math": "210-5=205",
+        "text": "Dice are distinguished by position, so each allowed vector corresponds to exactly one ordered roll.",
+        "diagram": "205 legal outcomes remain."
+      }
+    ],
+    "trap": "Using positive-variable stars and bars without the ceiling permits values greater than six.",
+    "check": "Why are there no intersections between the five invalid events?",
+    "answer": "Two deficits of at least six would sum to at least twelve, but the total deficit is only six.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "1.13",
+      "page": 7
+    },
+    "exampleSource": {
+      "id": "example-5.4",
+      "page": 81,
+      "attribution": "Example 5.4",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "inclusion-exclusion",
+    "title": "Count the complement carefully",
+    "domain": "Counting & probability",
+    "section": "1.12",
+    "formula": "|A\\cup B|=|A|+|B|-|A\\cap B|",
+    "condition": "A and B are finite sets in the same universe. Count their overlap once.",
+    "lesson": "inclusion",
+    "scene": "venn",
+    "example": "4.3",
+    "prompt": "How many subsets of {1,2,…,10} have at most four even elements and at most two elements divisible by three?",
+    "derivation": [
+      {
+        "title": "Mark the two events",
+        "math": "|A|+|B|",
+        "text": "Counting each set separately counts points in their intersection twice.",
+        "diagram": "Two overlapping regions are shaded."
+      },
+      {
+        "title": "Locate the duplication",
+        "math": "A\\cap B",
+        "text": "Every element of the overlap received one count from A and a second count from B.",
+        "diagram": "The overlap is highlighted."
+      },
+      {
+        "title": "Subtract one copy",
+        "math": "|A\\cup B|=|A|+|B|-|A\\cap B|",
+        "text": "Subtract the overlap exactly once. Every point in the union then has weight one.",
+        "diagram": "The overlap carries one count."
+      },
+      {
+        "title": "Use a complement",
+        "math": "|U\\setminus(A\\cup B)|=|U|-|A|-|B|+|A\\cap B|",
+        "text": "When restrictions say “at most,” the violating events may be simpler to count than the allowed cases.",
+        "diagram": "The region outside both events is retained."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Describe the violations",
+        "math": "|U|=2^{10}=1024",
+        "text": "Let A contain all five even numbers and let B contain all three multiples of three. A valid subset belongs to neither event.",
+        "diagram": "The universe has 1024 subsets."
+      },
+      {
+        "title": "Count each bad event",
+        "math": "|A|=2^5=32,\\quad |B|=2^7=128",
+        "text": "Once the required elements are included, every remaining element may be present or absent.",
+        "diagram": "A has 32 subsets and B has 128."
+      },
+      {
+        "title": "Count their overlap",
+        "math": "|A\\cap B|=2^3=8",
+        "text": "The required union is {2,3,4,6,8,9,10}. Only 1, 5, and 7 remain optional.",
+        "diagram": "The overlap has eight subsets."
+      },
+      {
+        "title": "Restore the overlap",
+        "math": "1024-32-128+8=872",
+        "text": "Subsets violating both conditions were removed twice. Add one copy back.",
+        "diagram": "872 subsets satisfy both restrictions."
+      }
+    ],
+    "trap": "The required sets overlap at 6; there are seven forced elements in the intersection, not eight.",
+    "check": "What changes if the two sets of forbidden requirements share no elements?",
+    "answer": "Count the size of their union by adding their sizes. The number of optional elements is ten minus that union size.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "1.12",
+      "page": 6
+    },
+    "exampleSource": {
+      "id": "example-4.3",
+      "page": 65,
+      "attribution": "Example 4.3 (Omega Learn)",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "lattice-paths",
+    "title": "Lattice paths through checkpoints",
+    "domain": "Counting & probability",
+    "section": "1.19",
+    "formula": "\\#\\text{paths}=\\binom{r+u}{r}",
+    "condition": "Each step is one unit right or up. Ordered checkpoints must be coordinatewise reachable.",
+    "lesson": "geometric-counting",
+    "scene": "grid",
+    "example": "7.12",
+    "prompt": "How many right/up paths from (0,0) to (5,6) avoid visiting all three of (1,2), (3,4), and (5,5)? Visiting one or two is allowed.",
+    "derivation": [
+      {
+        "title": "Encode the steps",
+        "math": "R^rU^u",
+        "text": "A path is a word containing r right moves and u up moves. The order determines its geometry.",
+        "diagram": "A path becomes an ordered sequence of steps."
+      },
+      {
+        "title": "Choose the right moves",
+        "math": "\\binom{r+u}{r}",
+        "text": "Choose which r of the r+u positions contain R. The remaining positions must contain U.",
+        "diagram": "Right-step positions are selected."
+      },
+      {
+        "title": "Split at a checkpoint",
+        "math": "\\binom{a+b}{a}\\binom{r-a+u-b}{r-a}",
+        "text": "A path through (a,b) consists of an independently chosen prefix and suffix. Multiply their counts.",
+        "diagram": "A marked checkpoint splits the path into two pieces."
+      },
+      {
+        "title": "Subtract the forbidden event",
+        "math": "\\text{allowed}=\\text{all}-\\text{forbidden}",
+        "text": "Distinguish “avoid every checkpoint” from “do not visit all checkpoints.” These are different events.",
+        "diagram": "The forbidden family is isolated."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Count every path",
+        "math": "\\binom{11}{5}=462",
+        "text": "Every complete path uses five right moves and six up moves.",
+        "diagram": "An eleven-step path reaches (5,6)."
+      },
+      {
+        "title": "Order the checkpoints",
+        "math": "(0,0)\\to(1,2)\\to(3,4)\\to(5,5)\\to(5,6)",
+        "text": "Monotone paths visiting all three must visit them in this order.",
+        "diagram": "The three checkpoints appear along a monotone route."
+      },
+      {
+        "title": "Multiply the segment counts",
+        "math": "\\binom31\\binom42\\binom32\\binom10=54",
+        "text": "The displacements are (1,2), (2,2), (2,1), and (0,1). Choose each segment independently.",
+        "diagram": "Four segments have counts 3, 6, 3, and 1."
+      },
+      {
+        "title": "Exclude only that family",
+        "math": "462-54=408",
+        "text": "Paths visiting fewer than three checkpoints remain allowed.",
+        "diagram": "408 paths remain."
+      }
+    ],
+    "trap": "Subtracting paths through each checkpoint separately answers the stronger, incorrect restriction.",
+    "check": "Could a right/up path visit (3,4) before (1,2)?",
+    "answer": "No. Both coordinates are nondecreasing, so a path cannot return to smaller coordinates.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "1.19",
+      "page": 13
+    },
+    "exampleSource": {
+      "id": "example-7.12",
+      "page": 113,
+      "attribution": "Example 7.12",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "geometric-probability",
+    "title": "Probability as an area ratio",
+    "domain": "Counting & probability",
+    "section": "1.20",
+    "formula": "P(E)=\\frac{\\operatorname{area}(E)}{\\operatorname{area}(\\Omega)}",
+    "condition": "The joint distribution must be uniform over the sample region. Independence alone does not imply uniformity.",
+    "lesson": "geometric-probability",
+    "scene": "probability",
+    "example": "8.1",
+    "prompt": "Alex and Bob independently arrive uniformly between 3 and 4 PM. Each waits fifteen minutes. What is the probability that they meet?",
+    "derivation": [
+      {
+        "title": "Choose two coordinates",
+        "math": "(x,y)\\in\\Omega",
+        "text": "Represent the two random choices by a point. First identify the region of possible pairs.",
+        "diagram": "Two axes describe the choices."
+      },
+      {
+        "title": "Check uniform density",
+        "math": "P(R)=c\\,\\operatorname{area}(R)",
+        "text": "For independent uniform choices on intervals, equal-area subregions have equal probability.",
+        "diagram": "Equal areas have equal probability."
+      },
+      {
+        "title": "Normalize",
+        "math": "c=\\frac1{\\operatorname{area}(\\Omega)}",
+        "text": "The whole sample region has probability one. Its area determines the density.",
+        "diagram": "The whole sample square has probability one."
+      },
+      {
+        "title": "Translate the condition",
+        "math": "P(E)=\\frac{\\operatorname{area}(E)}{\\operatorname{area}(\\Omega)}",
+        "text": "An inequality becomes a region. Often its complementary triangles are easiest to measure.",
+        "diagram": "A band is retained while corner triangles are removed."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Measure minutes after three",
+        "math": "0\\le x,y\\le60",
+        "text": "The square of side 60 represents all equally likely arrival pairs.",
+        "diagram": "The sample space is a 60-by-60 square."
+      },
+      {
+        "title": "Draw the meeting condition",
+        "math": "|x-y|\\le15",
+        "text": "They meet exactly when the later arrival is within fifteen minutes of the earlier one.",
+        "diagram": "A diagonal band has boundaries y=x±15."
+      },
+      {
+        "title": "Measure the missed meetings",
+        "math": "2\\cdot\\frac12(60-15)^2=2025",
+        "text": "The complement consists of two right triangles, each with legs 45.",
+        "diagram": "Two corner triangles each have legs 45."
+      },
+      {
+        "title": "Take the area ratio",
+        "math": "1-\\frac{2025}{3600}=\\frac7{16}",
+        "text": "The band occupies seven sixteenths of the square. Boundary points have probability zero.",
+        "diagram": "The meeting probability is 7/16."
+      }
+    ],
+    "trap": "The waiting time is fifteen minutes on either side of the diagonal, not a fixed quarter of the square.",
+    "check": "If the waiting time doubles to thirty minutes, what is the probability?",
+    "answer": "The excluded triangles have legs thirty, so the probability is $1-30^2/60^2=3/4$.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "1.20",
+      "page": 14
+    },
+    "exampleSource": {
+      "id": "example-8.1",
+      "page": 125,
+      "attribution": "Example 8.1",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "expectation",
+    "title": "Indicators & linearity",
+    "domain": "Counting & probability",
+    "section": "1.21",
+    "formula": "\\mathbb E\\!\\left[\\sum I_j\\right]=\\sum P(I_j=1)",
+    "condition": "Indicators take values zero or one. Linearity needs no independence between them.",
+    "lesson": "expectation",
+    "scene": "indicators",
+    "example": "9.4",
+    "prompt": "A five-element subset of {1,2,…,30} is selected uniformly. What is the expected number of pairs of consecutive integers in it?",
+    "derivation": [
+      {
+        "title": "Count one feature",
+        "math": "I_j=\\begin{cases}1&\\text{feature }j\\text{ occurs}\\\\0&\\text{otherwise}\\end{cases}",
+        "text": "Replace a complicated total with simple yes/no contributions.",
+        "diagram": "Each possible feature has its own indicator."
+      },
+      {
+        "title": "Compute its expectation",
+        "math": "\\mathbb E[I_j]=1\\cdot P(I_j=1)+0\\cdot P(I_j=0)",
+        "text": "A zero-one variable has expectation equal to the probability it is one.",
+        "diagram": "An active indicator contributes one."
+      },
+      {
+        "title": "Add the contributions",
+        "math": "X=\\sum_j I_j",
+        "text": "Choose indicators so that each object being counted contributes exactly once.",
+        "diagram": "The total is the sum of the highlighted indicators."
+      },
+      {
+        "title": "Use linearity",
+        "math": "\\mathbb E[X]=\\sum_j\\mathbb E[I_j]",
+        "text": "Dependencies may complicate the distribution of X, but they do not prevent adding expectations.",
+        "diagram": "Expectations add even for overlapping features."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Index the adjacent pairs",
+        "math": "(1,2),(2,3),\\ldots,(29,30)",
+        "text": "There are 29 possible consecutive pairs. An indicator records whether both members appear.",
+        "diagram": "The number line has 29 adjacent pairs."
+      },
+      {
+        "title": "Count subsets containing a pair",
+        "math": "P(I_j=1)=\\frac{\\binom{28}{3}}{\\binom{30}{5}}",
+        "text": "Fix the two members of one pair, then choose the other three numbers from the remaining 28.",
+        "diagram": "One fixed pair leaves three selections."
+      },
+      {
+        "title": "Simplify the probability",
+        "math": "\\frac{\\binom{28}{3}}{\\binom{30}{5}}=\\frac{5\\cdot4}{30\\cdot29}",
+        "text": "Equivalently, require the first specified number and then the second in a sample without replacement.",
+        "diagram": "Each pair has probability 20/870."
+      },
+      {
+        "title": "Sum all indicators",
+        "math": "29\\cdot\\frac{20}{30\\cdot29}=\\frac23",
+        "text": "A run of three selected integers contributes two pairs, exactly as the question requires.",
+        "diagram": "The expected count is 2/3."
+      }
+    ],
+    "trap": "Consecutive pairs overlap and their indicators are dependent. Independence is unnecessary here.",
+    "check": "Does the subset {1,2,3,10,20} contribute one pair or two?",
+    "answer": "Two: (1,2) and (2,3). Indicators count pairs, not runs.",
+    "track": 12,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "1.21",
+      "page": 14
+    },
+    "exampleSource": {
+      "id": "example-9.4",
+      "page": 138,
+      "attribution": "Example 9.4 (AMC 12)",
+      "level": "AMC 12"
+    }
+  },
+  {
+    "id": "vieta",
+    "title": "Roots without solving for roots",
+    "domain": "Algebra",
+    "section": "2.7",
+    "formula": "r+s=-\\frac ba,\\qquad rs=\\frac ca",
+    "condition": "The roots of ax²+bx+c are counted with multiplicity; a is nonzero.",
+    "lesson": "vieta",
+    "scene": "roots",
+    "example": "13.1",
+    "prompt": "If r and s are the roots of $3x^2+6x-5=0$, find $r^3+s^3$.",
+    "derivation": [
+      {
+        "title": "Factor over the roots",
+        "math": "ax^2+bx+c=a(x-r)(x-s)",
+        "text": "The leading coefficient a must remain in front. This identity also holds for repeated or complex roots.",
+        "diagram": "Two root factors are placed side by side."
+      },
+      {
+        "title": "Expand the product",
+        "math": "a(x-r)(x-s)=ax^2-a(r+s)x+ars",
+        "text": "The coefficient of x comes from choosing one root term, and the constant from choosing both.",
+        "diagram": "The cross terms combine into the root sum."
+      },
+      {
+        "title": "Compare coefficients",
+        "math": "r+s=-b/a,\\qquad rs=c/a",
+        "text": "Equal polynomials have equal coefficients. This reads symmetric information directly from the equation.",
+        "diagram": "Coefficient pairs are aligned."
+      },
+      {
+        "title": "Build the desired expression",
+        "math": "r^3+s^3=(r+s)^3-3rs(r+s)",
+        "text": "Expand the cube of the sum and remove the two mixed terms together.",
+        "diagram": "The mixed cubic terms are canceled."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Read the root data",
+        "math": "r+s=-2,\\qquad rs=-5/3",
+        "text": "Divide coefficients by the leading coefficient 3 and keep the minus sign on the root sum.",
+        "diagram": "The root sum is −2 and product is −5/3."
+      },
+      {
+        "title": "Avoid radicals",
+        "math": "(r+s)^3=r^3+s^3+3rs(r+s)",
+        "text": "The requested expression is symmetric, so finding each root separately adds unnecessary work.",
+        "diagram": "A cube expansion exposes the mixed terms."
+      },
+      {
+        "title": "Substitute the two invariants",
+        "math": "r^3+s^3=(-2)^3-3(-5/3)(-2)",
+        "text": "The product term being subtracted is positive ten.",
+        "diagram": "The values −8 and 10 are aligned."
+      },
+      {
+        "title": "Finish",
+        "math": "r^3+s^3=-18",
+        "text": "The answer depends only on the sum and product, not on a labeling of the roots.",
+        "diagram": "The symmetric result is −18."
+      }
+    ],
+    "trap": "Forgetting to divide by a changes both the root sum and the root product.",
+    "check": "What is $r^2+s^2$ for the same quadratic?",
+    "answer": "$r^2+s^2=(r+s)^2-2rs=4+10/3=22/3$.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "2.7",
+      "page": 22
+    },
+    "exampleSource": {
+      "id": "example-13.1",
+      "page": 185,
+      "attribution": "Example 13.1",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "polynomial-reduction",
+    "title": "Reduce powers with an identity",
+    "domain": "Algebra",
+    "section": "2.8",
+    "formula": "P(x)=(x-a)Q(x)+P(a)",
+    "condition": "Polynomial division by x−a leaves a constant remainder. Other known polynomial relations can reduce higher powers too.",
+    "lesson": "polynomials",
+    "scene": "reduction",
+    "example": "14.4",
+    "prompt": "A real number x satisfies $x+1/x=\\sqrt5$. Find $x^{11}-7x^7+x^3$.",
+    "derivation": [
+      {
+        "title": "Apply division",
+        "math": "P(x)=(x-a)Q(x)+R",
+        "text": "Dividing a polynomial by a linear factor leaves a remainder whose degree is less than one.",
+        "diagram": "A polynomial is split into multiple plus remainder."
+      },
+      {
+        "title": "Evaluate at the root",
+        "math": "P(a)=R",
+        "text": "Setting x=a makes the divisible part vanish.",
+        "diagram": "The divisible part vanishes at x=a."
+      },
+      {
+        "title": "Use a known relation",
+        "math": "g(x)=0\\ \\Longrightarrow\\ P(x)=R(x)",
+        "text": "More generally, reduce P modulo any polynomial g satisfied by x. At that x, the multiple of g vanishes.",
+        "diagram": "A known zero factor can be discarded."
+      },
+      {
+        "title": "Seek structure first",
+        "math": "P(x)=Q(x)g(x)+R(x)",
+        "text": "Factor or group the requested expression before expanding large powers. The useful relation may be hidden by reciprocal terms.",
+        "diagram": "The expression is regrouped around the known relation."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Square the given relation",
+        "math": "x^2+x^{-2}=5-2=3",
+        "text": "Since x is nonzero, reciprocal powers are legitimate. Remove the middle term 2.",
+        "diagram": "The mixed term in the first square is removed."
+      },
+      {
+        "title": "Square once more",
+        "math": "x^4+x^{-4}=3^2-2=7",
+        "text": "The same identity turns the sum of squares into a sum of fourth powers.",
+        "diagram": "A second squaring reveals the coefficient 7."
+      },
+      {
+        "title": "Clear the negative powers",
+        "math": "x^8-7x^4+1=0",
+        "text": "Multiply by x⁴ and move all terms to one side.",
+        "diagram": "The reciprocal relation becomes a polynomial zero."
+      },
+      {
+        "title": "Factor the requested expression",
+        "math": "x^{11}-7x^7+x^3=x^3(x^8-7x^4+1)=0",
+        "text": "Both possible real values of x satisfy the same zero factor, so no root choice is needed.",
+        "diagram": "The entire expression contains the zero factor."
+      }
+    ],
+    "trap": "Squaring can introduce extraneous solutions when solving an equation. Here only consequences of an already given solution are used.",
+    "check": "Why is multiplying by $x^4$ permitted?",
+    "answer": "The original expression contains 1/x, so x is already known to be nonzero.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "2.8",
+      "page": 23
+    },
+    "exampleSource": {
+      "id": "example-14.4",
+      "page": 198,
+      "attribution": "Example 14.4 (AMC 10)",
+      "level": "AMC 10"
+    }
+  },
+  {
+    "id": "geometric-series",
+    "title": "Geometric sums by cancellation",
+    "domain": "Algebra",
+    "section": "2.12",
+    "formula": "S_n=\\frac{a(1-r^n)}{1-r};\\qquad S_\\infty=\\frac a{1-r}",
+    "condition": "The finite formula requires r≠1; the infinite sum additionally requires |r|<1. At r=1 the finite sum is na.",
+    "lesson": "geometric",
+    "scene": "series",
+    "example": "16.2",
+    "prompt": "Let $S(r)=12+12r+12r^2+\\cdots$ for $-1<r<1$. If $S(a)S(-a)=2016$, find $S(a)+S(-a)$.",
+    "derivation": [
+      {
+        "title": "Write the finite sum",
+        "math": "S_n=a+ar+\\cdots+ar^{n-1}",
+        "text": "Use a finite number of terms first so every cancellation is justified.",
+        "diagram": "Successive terms form a geometric progression."
+      },
+      {
+        "title": "Shift by one term",
+        "math": "rS_n=ar+ar^2+\\cdots+ar^n",
+        "text": "Multiplication by r shifts each term into the position of its neighbor.",
+        "diagram": "A shifted copy aligns matching terms."
+      },
+      {
+        "title": "Subtract",
+        "math": "(1-r)S_n=a-ar^n",
+        "text": "Every interior term cancels. Only the first term of the original and the last term of the shifted sum remain.",
+        "diagram": "Only the two boundary terms remain."
+      },
+      {
+        "title": "Pass to a limit when allowed",
+        "math": "|r|<1\\ \\Longrightarrow\\ S_\\infty=a/(1-r)",
+        "text": "The tail arⁿ tends to zero only under the convergence condition.",
+        "diagram": "The final tail shrinks to zero."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Write the two sums",
+        "math": "S(a)=\\frac{12}{1-a},\\quad S(-a)=\\frac{12}{1+a}",
+        "text": "Both series converge because |a|<1. The opposite signs give conjugate denominators.",
+        "diagram": "Two complementary denominators appear."
+      },
+      {
+        "title": "Use their product",
+        "math": "\\frac{144}{1-a^2}=2016",
+        "text": "Multiplying removes the linear terms from the denominator.",
+        "diagram": "The product denominator is 1−a²."
+      },
+      {
+        "title": "Form their sum",
+        "math": "S(a)+S(-a)=\\frac{24}{1-a^2}",
+        "text": "The same denominator appears, so solving for a itself is unnecessary.",
+        "diagram": "The numerator becomes 24."
+      },
+      {
+        "title": "Compare directly",
+        "math": "S(a)+S(-a)=\\frac{24}{144}\\cdot2016=336",
+        "text": "The sum is one sixth of the given product. Both signs of a give the same answer.",
+        "diagram": "The sum is 336."
+      }
+    ],
+    "trap": "A geometric series with r=−1 does not converge, even though 1−r is nonzero.",
+    "check": "What happens when a=0?",
+    "answer": "Both sums equal 12. Their sum is 24 and their product is 144, still in the ratio one to six.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "2.12",
+      "page": 30
+    },
+    "exampleSource": {
+      "id": "example-16.2",
+      "page": 219,
+      "attribution": "Example 16.2 (AIME)",
+      "level": "Enrichment"
+    }
+  },
+  {
+    "id": "telescoping",
+    "title": "Telescoping to a Diophantine equation",
+    "domain": "Algebra",
+    "section": "2.14",
+    "formula": "\\sum_{k=m}^{n-1}\\frac1{k(k+1)}=\\frac1m-\\frac1n",
+    "condition": "m and n are positive integers with m<n. Keep the first and last uncanceled terms.",
+    "lesson": "telescoping",
+    "scene": "telescope",
+    "example": "17.1",
+    "prompt": "For $a_k=1/(k^2+k)$, positive integers $m<n$ satisfy $a_m+\\cdots+a_{n-1}=1/29$. Find $m+n$.",
+    "derivation": [
+      {
+        "title": "Split one term",
+        "math": "\\frac1{k(k+1)}=\\frac1k-\\frac1{k+1}",
+        "text": "Put the right side over a common denominator. The numerator is (k+1)−k=1.",
+        "diagram": "Each fraction splits into a positive and negative neighbor."
+      },
+      {
+        "title": "Write adjacent terms",
+        "math": "(1/m-1/(m+1))+(1/(m+1)-1/(m+2))+\\cdots",
+        "text": "The negative part of each term cancels the positive part of the next.",
+        "diagram": "Neighboring fractions line up."
+      },
+      {
+        "title": "Cancel the interior",
+        "math": "\\sum_{k=m}^{n-1}\\frac1{k(k+1)}=\\frac1m-\\frac1n",
+        "text": "The last index is n−1, so the final negative denominator is n.",
+        "diagram": "Only the first positive and last negative terms remain."
+      },
+      {
+        "title": "Check endpoints",
+        "math": "n=m+1\\ \\Longrightarrow\\ \\frac1m-\\frac1{m+1}",
+        "text": "A one-term sum reproduces the original fraction; this catches the common off-by-one error.",
+        "diagram": "The endpoint check agrees with a single term."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Collapse the sum",
+        "math": "\\frac1m-\\frac1n=\\frac1{29}",
+        "text": "The textbook expression has n−m terms, ending at n−1.",
+        "diagram": "All interior fractions cancel."
+      },
+      {
+        "title": "Solve for the second endpoint",
+        "math": "n=\\frac{29m}{29-m}",
+        "text": "Because n is positive, the denominator is positive and 1≤m≤28.",
+        "diagram": "The endpoint m lies below 29."
+      },
+      {
+        "title": "Use divisibility",
+        "math": "n=\\frac{841}{29-m}-29",
+        "text": "The positive integer 29−m lies between 1 and 28 and divides 29². The only possibility is 1.",
+        "diagram": "The only admissible divisor is one."
+      },
+      {
+        "title": "Recover the integers",
+        "math": "m=28,\\quad n=812,\\quad m+n=840",
+        "text": "Check: 1/28−1/812=1/29. The pair meets both positivity and order restrictions.",
+        "diagram": "The valid endpoints are 28 and 812."
+      }
+    ],
+    "trap": "Ending with −1/(n−1) loses the negative half of the last summand.",
+    "check": "Why can 29−m not equal 29?",
+    "answer": "That would give m=0, which is excluded. The other divisor 841 is also outside the permitted range.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "2.14",
+      "page": 32
+    },
+    "exampleSource": {
+      "id": "example-17.1",
+      "page": 226,
+      "attribution": "Example 17.1 (AIME)",
+      "level": "Enrichment"
+    }
+  },
+  {
+    "id": "divisor-sums",
+    "title": "Divisor sums from independent exponents",
+    "domain": "Number theory",
+    "section": "3.2",
+    "formula": "\\sigma\\!\\left(\\prod p_i^{a_i}\\right)=\\prod(1+p_i+\\cdots+p_i^{a_i})",
+    "condition": "The pᵢ are distinct primes and the aᵢ are nonnegative integers; divisors are positive.",
+    "lesson": "factors",
+    "scene": "divisors",
+    "example": "21.4",
+    "prompt": "Let $f(n)=\\sigma(n)/n$, where $\\sigma(n)$ is the sum of positive divisors of n. Find $f(768)-f(384)$.",
+    "derivation": [
+      {
+        "title": "Choose a prime exponent",
+        "math": "1,p,p^2,\\ldots,p^a",
+        "text": "A divisor of pᵃ can contain any exponent from zero through a.",
+        "diagram": "Exponent choices are listed along an axis."
+      },
+      {
+        "title": "Combine distinct primes",
+        "math": "d=\\prod p_i^{e_i},\\quad 0\\le e_i\\le a_i",
+        "text": "Unique factorization makes these choices independent and produces every divisor once.",
+        "diagram": "A grid combines two prime-exponent choices."
+      },
+      {
+        "title": "Distribute the product",
+        "math": "\\sigma(n)=\\prod_i\\sum_{e=0}^{a_i}p_i^e",
+        "text": "Expanding the product chooses one prime power from each factor, so its terms are exactly the divisors.",
+        "diagram": "Every grid point contributes one divisor."
+      },
+      {
+        "title": "Use geometric sums",
+        "math": "\\sigma(n)=\\prod_i\\frac{p_i^{a_i+1}-1}{p_i-1}",
+        "text": "Each finite geometric sum has ratio pᵢ. Since pᵢ is prime, pᵢ−1 is nonzero.",
+        "diagram": "Geometric sums compact the divisor total."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Factor the two inputs",
+        "math": "768=3\\cdot2^8,\\quad384=3\\cdot2^7",
+        "text": "The inputs differ only by one factor of two, suggesting that most normalized divisor terms will cancel.",
+        "diagram": "The exponent grids differ by one column."
+      },
+      {
+        "title": "Normalize before subtracting",
+        "math": "f(3\\cdot2^a)=\\frac43\\left(1+\\frac12+\\cdots+\\frac1{2^a}\\right)",
+        "text": "Dividing a divisor sum by n reverses the powers into reciprocals.",
+        "diagram": "Normalized sums align their shared terms."
+      },
+      {
+        "title": "Cancel their common part",
+        "math": "f(768)-f(384)=\\frac43\\cdot\\frac1{2^8}",
+        "text": "All terms through 1/2⁷ cancel, leaving only the new last term.",
+        "diagram": "Only the extra eighth-power term remains."
+      },
+      {
+        "title": "Simplify",
+        "math": "\\frac4{3\\cdot256}=\\frac1{192}",
+        "text": "This avoids computing and subtracting two large divisor sums.",
+        "diagram": "The difference is 1/192."
+      }
+    ],
+    "trap": "The divisor-sum function is multiplicative only for relatively prime factors.",
+    "check": "Why is splitting 768 as 3·256 safe here?",
+    "answer": "The factors are relatively prime. Their prime-exponent choices are disjoint, so every divisor has a unique decomposition.",
+    "track": 12,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "3.2",
+      "page": 37
+    },
+    "exampleSource": {
+      "id": "example-21.4",
+      "page": 264,
+      "attribution": "Example 21.4 (AMC 12)",
+      "level": "AMC 12"
+    }
+  },
+  {
+    "id": "congruences",
+    "title": "Combine two congruences",
+    "domain": "Number theory",
+    "section": "3.6",
+    "formula": "ax\\equiv b\\pmod m\\ \\Longrightarrow\\ x\\equiv a^{-1}b\\pmod m",
+    "condition": "A modular inverse a⁻¹ exists exactly when gcd(a,m)=1. Otherwise first check the common divisor.",
+    "lesson": "modular",
+    "scene": "clock",
+    "example": "24.6",
+    "prompt": "Find the smallest integer greater than 100 that leaves remainder 5 on division by 9 and remainder 4 on division by 17.",
+    "derivation": [
+      {
+        "title": "Interpret a residue",
+        "math": "x\\equiv r\\pmod m\\ \\Longleftrightarrow\\ x=r+mk",
+        "text": "A congruence describes an entire arithmetic progression, not one integer.",
+        "diagram": "A residue class repeats around a modular clock."
+      },
+      {
+        "title": "Substitute into the second condition",
+        "math": "r+mk\\equiv s\\pmod n",
+        "text": "Parameterize one condition exactly, then ask which values of k satisfy the other.",
+        "diagram": "Each step of size m advances around the second clock."
+      },
+      {
+        "title": "Find an inverse",
+        "math": "um+vn=1\\ \\Longrightarrow\\ um\\equiv1\\pmod n",
+        "text": "When m and n are coprime, Bézout’s identity gives an inverse of m modulo n.",
+        "diagram": "A multiplying step reverses the residue advance."
+      },
+      {
+        "title": "Recover the progression",
+        "math": "k\\equiv u(s-r)\\pmod n",
+        "text": "Translate back to x, then impose the requested size or sign condition.",
+        "diagram": "The combined solutions repeat every mn."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Encode the first remainder",
+        "math": "N=5+9k",
+        "text": "Every integer with remainder five modulo nine has this form.",
+        "diagram": "Start at residue five and advance by nine."
+      },
+      {
+        "title": "Impose the second remainder",
+        "math": "9k\\equiv-1\\equiv16\\pmod{17}",
+        "text": "Substitute the expression for N and subtract five.",
+        "diagram": "The target residue for 9k is sixteen."
+      },
+      {
+        "title": "Invert nine",
+        "math": "2\\cdot9\\equiv1\\pmod{17},\\quad k\\equiv32\\equiv15",
+        "text": "Multiplication by two is valid because nine and seventeen are coprime.",
+        "diagram": "Multiplication by two finds k≡15."
+      },
+      {
+        "title": "Select the first valid integer",
+        "math": "N=140+153t\\quad\\Longrightarrow\\quad N_{\\min>100}=140",
+        "text": "The preceding representative is −13. Direct checks give 140=9·15+5=17·8+4.",
+        "diagram": "The first representative above 100 is 140."
+      }
+    ],
+    "trap": "Ordinary division is not automatically valid modulo m. It requires an invertible divisor or a careful reduction.",
+    "check": "Why is the period 153?",
+    "answer": "Adding 9·17 preserves both remainders, and coprimality makes 153 the smallest positive common period.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "3.6",
+      "page": 40
+    },
+    "exampleSource": {
+      "id": "example-24.6",
+      "page": 298,
+      "attribution": "Example 24.6",
+      "level": "Textbook"
+    }
+  },
+  {
+    "id": "integer-factorization",
+    "title": "Complete a product",
+    "domain": "Number theory",
+    "section": "3.10",
+    "formula": "xy+ax+by=c\\ \\Longleftrightarrow\\ (x+b)(y+a)=c+ab",
+    "condition": "The identity is algebraic; integer solutions require integer factor pairs and all original restrictions.",
+    "lesson": "diophantine",
+    "scene": "border",
+    "example": "25.4",
+    "prompt": "A rectangular floor has integer side lengths $a<b$. A one-foot border occupies half the floor’s area. How many ordered pairs $(a,b)$ are possible?",
+    "derivation": [
+      {
+        "title": "Look for a missing corner",
+        "math": "xy+ax+by",
+        "text": "Three terms resemble the area of a larger rectangle missing one corner.",
+        "diagram": "A rectangle is shown with one corner missing."
+      },
+      {
+        "title": "Add the corner",
+        "math": "xy+ax+by+ab",
+        "text": "The needed corner has side lengths a and b. Add its area to both sides of an equation.",
+        "diagram": "The missing corner slides into place."
+      },
+      {
+        "title": "Factor the completed rectangle",
+        "math": "(x+b)(y+a)=c+ab",
+        "text": "The new equation turns an additive relation into a product relation.",
+        "diagram": "The complete rectangle factors into two side lengths."
+      },
+      {
+        "title": "Enumerate valid factors",
+        "math": "u=x+b,\\quad v=y+a,\\quad uv=c+ab",
+        "text": "An integer equation now becomes a finite factor search when the right side is nonzero. Check signs, order, and original geometry.",
+        "diagram": "Factor pairs are matched to candidate dimensions."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Write the painted area",
+        "math": "(a-2)(b-2)=\\frac{ab}{2}",
+        "text": "One foot is removed at each end of each dimension. The painted interior is the other half of the floor.",
+        "diagram": "The interior is inset one foot on every side."
+      },
+      {
+        "title": "Complete the product",
+        "math": "ab-4a-4b+8=0\\ \\Longrightarrow\\ (a-4)(b-4)=8",
+        "text": "Expand, double, rearrange, then add sixteen to form the product.",
+        "diagram": "The area equation becomes a product of shifted lengths."
+      },
+      {
+        "title": "Check the signs and order",
+        "math": "(a-4,b-4)=(1,8)\\text{ or }(2,4)",
+        "text": "A nonempty painted rectangle requires a,b>2. Negative factors could only both be −1, whose product is not eight. Order requires the smaller factor first.",
+        "diagram": "Only two positive factor pairs satisfy the order."
+      },
+      {
+        "title": "Recover the dimensions",
+        "math": "(a,b)=(5,12),(6,8)\\quad\\Longrightarrow\\quad2",
+        "text": "The interiors have areas 30 and 24, exactly half the outer areas 60 and 48.",
+        "diagram": "Both candidate rectangles satisfy the area condition."
+      }
+    ],
+    "trap": "A one-foot border shortens each interior dimension by two feet, not one.",
+    "check": "Why is the factor pair (4,2) excluded?",
+    "answer": "It gives a=8 and b=6, contradicting a<b. It is the same rectangle with the forbidden order.",
+    "track": 12,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "3.10",
+      "page": 45
+    },
+    "exampleSource": {
+      "id": "example-25.4",
+      "page": 309,
+      "attribution": "Example 25.4 (AMC 12)",
+      "level": "AMC 12"
+    }
+  },
+  {
+    "id": "triangle-centers",
+    "title": "Inradius, circumradius & coordinates",
+    "domain": "Geometry",
+    "section": "4.3",
+    "formula": "K=rs,\\qquad R=\\frac{abc}{4K}",
+    "condition": "A nondegenerate triangle has area K, semiperimeter s, inradius r, and circumradius R.",
+    "lesson": "triangle-area",
+    "scene": "triangle",
+    "example": "38.2",
+    "prompt": "A triangle has side lengths 5, 12, and 13. Find the distance between its incenter and circumcenter.",
+    "derivation": [
+      {
+        "title": "Join the incenter to the vertices",
+        "math": "K=\\tfrac12ar+\\tfrac12br+\\tfrac12cr",
+        "text": "The perpendicular distance from the incenter to every side is r. The three subtriangle areas add.",
+        "diagram": "Three equal inradii form the heights of subtriangles."
+      },
+      {
+        "title": "Factor the common height",
+        "math": "K=\\tfrac12(a+b+c)r=sr",
+        "text": "The half-perimeter appears naturally, giving r=K/s.",
+        "diagram": "The three bases combine into the semiperimeter."
+      },
+      {
+        "title": "Relate a side to its chord",
+        "math": "c=2R\\sin C",
+        "text": "A chord subtending angle C at the circumference has length 2R sin C.",
+        "diagram": "A side is a chord of the circumcircle."
+      },
+      {
+        "title": "Eliminate the sine",
+        "math": "K=\\tfrac12ab\\sin C=\\frac{abc}{4R}",
+        "text": "Combine the ordinary sine-area formula with the chord relation to obtain the circumradius formula.",
+        "diagram": "The two area formulas identify the circumradius."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Place the right triangle",
+        "math": "A=(0,0),\\quad B=(5,0),\\quad C=(0,12)",
+        "text": "Since 5²+12²=13², the right angle can sit at the origin. The area is 30 and semiperimeter 15.",
+        "diagram": "A 5–12–13 right triangle is placed on the axes."
+      },
+      {
+        "title": "Locate the incenter",
+        "math": "r=30/15=2,\\qquad I=(2,2)",
+        "text": "Tangency to both coordinate axes makes both coordinates of the incenter equal to r.",
+        "diagram": "The incircle has center (2,2) and radius 2."
+      },
+      {
+        "title": "Locate the circumcenter",
+        "math": "O=\\left(\\frac52,6\\right)",
+        "text": "In a right triangle, the midpoint of the hypotenuse is equidistant from all three vertices.",
+        "diagram": "The circumcenter is the hypotenuse midpoint."
+      },
+      {
+        "title": "Measure the distance",
+        "math": "OI=\\sqrt{(5/2-2)^2+(6-2)^2}=\\frac{\\sqrt{65}}2",
+        "text": "Coordinates avoid constructing the angle between the two centers.",
+        "diagram": "The center-to-center segment has length √65/2."
+      }
+    ],
+    "trap": "The incenter is generally not the centroid or the circumcenter; the centers must be located separately.",
+    "check": "Can you check the result using Euler’s relation $OI^2=R(R-2r)$?",
+    "answer": "$R=13/2$ and $r=2$ give $OI^2=(13/2)(5/2)=65/4$, agreeing with the coordinate result.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "4.3",
+      "page": 59
+    },
+    "exampleSource": {
+      "id": "example-38.2",
+      "page": 579,
+      "attribution": "Example 38.2 (AMC 10)",
+      "level": "AMC 10"
+    }
+  },
+  {
+    "id": "shoelace",
+    "title": "Signed area & an equal-area cut",
+    "domain": "Geometry",
+    "section": "4.35",
+    "formula": "K=\\frac12\\left|\\sum_i(x_i y_{i+1}-y_i x_{i+1})\\right|",
+    "condition": "List the vertices of a simple polygon in boundary order and repeat the first vertex at the end.",
+    "lesson": "coordinates",
+    "scene": "polygon",
+    "example": "38.1",
+    "prompt": "A quadrilateral has vertices A=(0,0), B=(1,2), C=(3,3), D=(4,0). A line through A bisects its area and meets CD at (p/q,r/s), in lowest terms. Find p+q+r+s.",
+    "derivation": [
+      {
+        "title": "Use an oriented triangle",
+        "math": "2[OAB]=x_Ay_B-y_Ax_B",
+        "text": "The determinant gives twice the signed area. Reversing orientation reverses its sign.",
+        "diagram": "A triangle is measured by its signed cross product."
+      },
+      {
+        "title": "Sum around the boundary",
+        "math": "2K_{\\rm signed}=\\sum_i(x_i y_{i+1}-y_i x_{i+1})",
+        "text": "Oriented triangles from the origin add; contributions outside the polygon cancel.",
+        "diagram": "Boundary triangles add with orientation."
+      },
+      {
+        "title": "Close the polygon",
+        "math": "(x_{n+1},y_{n+1})=(x_1,y_1)",
+        "text": "The final edge back to the first vertex contributes too. Omitting it is safe only accidentally when that contribution is zero.",
+        "diagram": "The last edge returns to the first vertex."
+      },
+      {
+        "title": "Take one absolute value",
+        "math": "K=\\tfrac12|2K_{\\rm signed}|",
+        "text": "Sum signed terms first, then take the absolute value. Absolute values on individual terms destroy cancellation.",
+        "diagram": "The final signed sum becomes ordinary area."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Compute the whole area",
+        "math": "2K=|3-(6+12)|=15,\\qquad K=15/2",
+        "text": "The cross products for A,B,C,D in boundary order sum to −15.",
+        "diagram": "The quadrilateral has area 15/2."
+      },
+      {
+        "title": "Use the simple half",
+        "math": "[ADE]=\\tfrac12\\cdot4\\cdot y_E=2y_E",
+        "text": "The side AD lies on the x-axis, so the half-area triangle needs only the height of E.",
+        "diagram": "The cut isolates a triangle with base four."
+      },
+      {
+        "title": "Find the height and position",
+        "math": "2y_E=15/4\\Rightarrow y_E=15/8;\\quad CD:\\ y=12-3x",
+        "text": "Set the triangle area equal to half the quadrilateral area, then use the line through C and D.",
+        "diagram": "The point E is where y=15/8 meets CD."
+      },
+      {
+        "title": "Read the reduced coordinates",
+        "math": "E=(27/8,15/8),\\qquad27+8+15+8=58",
+        "text": "Both fractions are already reduced and E lies between C and D.",
+        "diagram": "The requested numerator-denominator sum is 58."
+      }
+    ],
+    "trap": "Taking absolute values before summing the signed cross products can overcount the polygon.",
+    "check": "Why must E actually lie on the segment CD?",
+    "answer": "Its x-coordinate 27/8 lies between 3 and 4, and its y-coordinate 15/8 lies between 0 and 3; it also satisfies the line equation.",
+    "track": 10,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "4.35",
+      "page": 95
+    },
+    "exampleSource": {
+      "id": "example-38.1",
+      "page": 578,
+      "attribution": "Example 38.1 (AMC 10)",
+      "level": "AMC 10"
+    }
+  },
+  {
+    "id": "amgm",
+    "title": "An attainable bound with AM–GM",
+    "domain": "Advanced topics",
+    "section": "5.3",
+    "formula": "\\frac{x_1+\\cdots+x_n}{n}\\ge\\sqrt[n]{x_1\\cdots x_n}",
+    "condition": "All variables are nonnegative. Equality holds exactly when they are equal. Integer restrictions may prevent equality.",
+    "lesson": "inequalities",
+    "scene": "amgm",
+    "example": "40.1",
+    "prompt": "Nonnegative integers A,M,C satisfy A+M+C=12. Find the maximum of AMC+AM+MC+AC.",
+    "derivation": [
+      {
+        "title": "Start with a square",
+        "math": "(\\sqrt x-\\sqrt y)^2\\ge0",
+        "text": "For nonnegative x and y, both square roots exist and every real square is nonnegative.",
+        "diagram": "Two nonnegative lengths determine a square difference."
+      },
+      {
+        "title": "Rearrange",
+        "math": "x+y\\ge2\\sqrt{xy}",
+        "text": "Expanding gives x+y−2√xy≥0. Equality occurs when √x=√y.",
+        "diagram": "The unequal pair is compared with an equal pair."
+      },
+      {
+        "title": "Extend by equalizing pairs",
+        "math": "\\prod_{i=1}^n x_i\\le\\left(\\frac{\\sum x_i}{n}\\right)^n",
+        "text": "With a fixed positive sum, replacing an unequal positive pair by their average increases its product. A maximizing positive tuple must therefore have all entries equal. Zero-product boundary cases cannot beat it.",
+        "diagram": "Equalizing factors raises the product while preserving the sum."
+      },
+      {
+        "title": "Test attainability",
+        "math": "x_1=\\cdots=x_n",
+        "text": "A numerical bound becomes the maximum only if the equality configuration satisfies every original restriction.",
+        "diagram": "All factors coincide at equality."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Complete the product",
+        "math": "(A+1)(M+1)(C+1)=AMC+AM+MC+AC+13",
+        "text": "The extra terms are A+M+C+1=13, a fixed amount.",
+        "diagram": "The target is shifted into a product of three factors."
+      },
+      {
+        "title": "Apply the fixed sum",
+        "math": "(A+1)+(M+1)+(C+1)=15",
+        "text": "The shifted variables are positive and their sum is constant.",
+        "diagram": "Three positive factors have total fifteen."
+      },
+      {
+        "title": "Bound the product",
+        "math": "(A+1)(M+1)(C+1)\\le5^3=125",
+        "text": "AM–GM gives equality at A+1=M+1=C+1=5.",
+        "diagram": "The balanced factors are 5, 5, and 5."
+      },
+      {
+        "title": "Check the original variables",
+        "math": "A=M=C=4,\\qquad\\max=125-13=112",
+        "text": "The equality case uses nonnegative integers with sum twelve, so the bound is attained.",
+        "diagram": "The maximum 112 is attained."
+      }
+    ],
+    "trap": "Bounding AMC and AM+MC+AC separately is valid only if their equality cases are compatible.",
+    "check": "Why is “at most 112” not a complete maximum proof?",
+    "answer": "You must also produce an admissible triple attaining 112. Here (4,4,4) does so.",
+    "track": 12,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "5.3",
+      "page": 98
+    },
+    "exampleSource": {
+      "id": "example-40.1",
+      "page": 600,
+      "attribution": "Example 40.1 (AMC 12)",
+      "level": "AMC 12"
+    }
+  },
+  {
+    "id": "logarithms",
+    "title": "Change the base before comparing",
+    "domain": "Advanced topics",
+    "section": "5.6",
+    "formula": "\\log_b a=\\frac{\\ln a}{\\ln b}",
+    "condition": "For real logarithms, a>0, b>0, and b≠1. Every variable base must satisfy these conditions.",
+    "lesson": "logarithms",
+    "scene": "logs",
+    "example": "41.1",
+    "prompt": "For positive x with $x\\ne1/3,1/2$, solve $\\log_{3x}4=\\log_{2x}8$. Write x=p/q in lowest terms and find p+q.",
+    "derivation": [
+      {
+        "title": "Return to the definition",
+        "math": "y=\\log_b a\\ \\Longleftrightarrow\\ b^y=a",
+        "text": "A logarithm asks which exponent of b produces a.",
+        "diagram": "The logarithm is rewritten as an exponent equation."
+      },
+      {
+        "title": "Take a common logarithm",
+        "math": "\\ln(b^y)=\\ln a",
+        "text": "The bases and arguments are positive, so taking natural logs is legitimate.",
+        "diagram": "Both sides are measured with the same logarithm."
+      },
+      {
+        "title": "Bring down the exponent",
+        "math": "y\\ln b=\\ln a",
+        "text": "The power rule follows from the exponential definition. The base cannot be one, so ln b is nonzero.",
+        "diagram": "The unknown exponent becomes a linear multiplier."
+      },
+      {
+        "title": "Divide and retain the domain",
+        "math": "y=\\frac{\\ln a}{\\ln b}",
+        "text": "A common base turns comparisons of unrelated logarithms into ordinary algebra.",
+        "diagram": "The change-of-base ratio appears."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Use one common base",
+        "math": "\\frac{2\\ln2}{\\ln(3x)}=\\frac{3\\ln2}{\\ln(2x)}",
+        "text": "The excluded values ensure neither denominator is zero.",
+        "diagram": "The two logarithms share a numerator factor ln 2."
+      },
+      {
+        "title": "Cross-multiply",
+        "math": "2\\ln(2x)=3\\ln(3x)",
+        "text": "Cancel ln 2, which is nonzero, then cross-multiply the nonzero denominators.",
+        "diagram": "The equation becomes linear in ln x."
+      },
+      {
+        "title": "Collect logarithms",
+        "math": "\\ln x=2\\ln2-3\\ln3=\\ln(4/27)",
+        "text": "Expand the logarithms of products using x>0.",
+        "diagram": "The remaining logarithm is ln(4/27)."
+      },
+      {
+        "title": "Check and report",
+        "math": "x=4/27,\\qquad p+q=31",
+        "text": "The result is positive and different from 1/3 and 1/2. The fraction is reduced.",
+        "diagram": "The admissible solution gives 31."
+      }
+    ],
+    "trap": "Canceling logarithms as if log(ab)=log(a)log(b) is invalid; products become sums.",
+    "check": "Why were x=1/3 and x=1/2 excluded before the algebra?",
+    "answer": "They make one of the logarithm bases equal to one, so the original expression is undefined.",
+    "track": 12,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "5.6",
+      "page": 102
+    },
+    "exampleSource": {
+      "id": "example-41.1",
+      "page": 612,
+      "attribution": "Example 41.1 (AMC 12)",
+      "level": "AMC 12"
+    }
+  },
+  {
+    "id": "complex-division",
+    "title": "Complex division & a rotation",
+    "domain": "Advanced topics",
+    "section": "5.22",
+    "formula": "\\frac{a+bi}{c+di}=\\frac{(ac+bd)+(bc-ad)i}{c^2+d^2}",
+    "condition": "All four coefficients are real and c+di is nonzero. Multiplying by i rotates a complex number 90° counterclockwise.",
+    "lesson": "complex",
+    "scene": "complex",
+    "example": "44.3",
+    "prompt": "A complex number z has imaginary part 164 and satisfies $z/(z+n)=4i$ for a positive integer n. Find n.",
+    "derivation": [
+      {
+        "title": "Use the conjugate",
+        "math": "\\frac{a+bi}{c+di}\\cdot\\frac{c-di}{c-di}",
+        "text": "Multiplying numerator and denominator by the conjugate preserves the quotient and removes the imaginary denominator.",
+        "diagram": "A vector and its reflection represent conjugates."
+      },
+      {
+        "title": "Compute the real denominator",
+        "math": "(c+di)(c-di)=c^2+d^2",
+        "text": "Since i²=−1, the product is the squared modulus, positive for a nonzero denominator.",
+        "diagram": "The denominator becomes a positive squared length."
+      },
+      {
+        "title": "Expand the numerator",
+        "math": "(a+bi)(c-di)=(ac+bd)+(bc-ad)i",
+        "text": "Keep real and imaginary terms separate while expanding.",
+        "diagram": "Real and imaginary components are collected."
+      },
+      {
+        "title": "Read a geometric operation",
+        "math": "i(x+yi)=-y+xi",
+        "text": "Multiplication by i sends (x,y) to (−y,x): a quarter-turn preserving length.",
+        "diagram": "The vector turns ninety degrees counterclockwise."
+      }
+    ],
+    "worked": [
+      {
+        "title": "Name the real part",
+        "math": "z=x+164i",
+        "text": "The imaginary part is fixed, so only one real coordinate remains unknown.",
+        "diagram": "z lies on the horizontal line Im z=164."
+      },
+      {
+        "title": "Clear the denominator",
+        "math": "x+164i=4i(x+n+164i)=-656+4(x+n)i",
+        "text": "The equality says z is a quarter-turn and fourfold dilation of z+n.",
+        "diagram": "The translated vector rotates and scales by four."
+      },
+      {
+        "title": "Compare coordinates",
+        "math": "x=-656,\\qquad164=4(x+n)",
+        "text": "Equality of complex numbers requires equality of both real and imaginary parts.",
+        "diagram": "The real coordinate is fixed at −656."
+      },
+      {
+        "title": "Solve and check",
+        "math": "n=41-x=697",
+        "text": "Then z+n=41+164i is nonzero, and 4i(41+164i)=−656+164i=z.",
+        "diagram": "The shift n is 697."
+      }
+    ],
+    "trap": "The imaginary part is the real coefficient 164, not the expression 164i.",
+    "check": "What does multiplication by −i do geometrically?",
+    "answer": "It rotates a vector ninety degrees clockwise and preserves its length.",
+    "track": 12,
+    "source": {
+      "title": "Omega Learn AMC 10/12 Crash Course",
+      "section": "5.22",
+      "page": 114
+    },
+    "exampleSource": {
+      "id": "example-44.3",
+      "page": 658,
+      "attribution": "Example 44.3 (AIME)",
+      "level": "Enrichment"
+    }
+  }
+]

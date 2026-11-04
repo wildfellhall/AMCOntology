@@ -1,0 +1,1032 @@
+.formulary-page {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.formulary-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: center;
+  gap: 32px;
+  margin: 12px 0 8px;
+}
+.formulary-heading h1 {
+  font: 500 clamp(42px, 6vw, 70px)/1 var(--display);
+  margin: 10px 0 18px;
+  letter-spacing: -0.025em;
+}
+.formulary-heading p:not(.eyebrow) {
+  max-width: 620px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.formulary-heading .natural-plate {
+  width: 100%;
+  height: auto;
+}
+.formulary-tally {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 22px;
+}
+.formulary-page > .fleuron {
+  display: block;
+  width: 100%;
+  height: 22px;
+  margin: 16px auto;
+}
+.formulary-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  border-bottom: 1px solid var(--line);
+  margin: 12px 0 26px;
+  scroll-margin-top: 20px;
+}
+.formulary-tabs button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  padding: 12px 2px;
+  font-family: var(--display);
+  font-size: 23px;
+  color: var(--muted);
+}
+.formulary-tabs button[aria-current] {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+.formulary-toolbar {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.formulary-toolbar label,
+.formula-selector label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.formulary-toolbar label {
+  flex: 1 1 180px;
+}
+.formulary-toolbar .formulary-search {
+  flex: 2 1 260px;
+}
+.formulary-toolbar select,
+.formula-selector select {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 8px 30px 8px 12px;
+  font-size: 14px;
+  background-color: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+.formulary-search > div {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding-left: 13px;
+  gap: 8px;
+}
+.formulary-search svg {
+  flex-shrink: 0;
+}
+.formulary-search input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  height: 42px;
+  padding: 8px 10px 8px 0;
+  font-size: 14px;
+}
+.formulary-result-count {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 13px 0 25px;
+}
+.formula-selector {
+  display: flex;
+  gap: 18px;
+  align-items: end;
+  justify-content: space-between;
+  margin: 0 0 18px;
+  scroll-margin-top: 24px;
+}
+.formula-selector label {
+  flex: 1;
+  max-width: 640px;
+}
+.formula-selector > div {
+  display: flex;
+  gap: 8px;
+}
+.formula-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 42px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  color: var(--accent);
+  background: var(--panel);
+  border-radius: 50%;
+}
+.formula-icon-button svg,
+.formula-play-button svg,
+.formulary-page .text-button svg,
+.source-actions svg {
+  flex-shrink: 0;
+}
+.formula-icon-button:disabled,
+.formula-play-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.formula-folio,
+.source-example {
+  position: relative;
+  border: 1px solid var(--line);
+  padding: 34px 38px 24px;
+  background: var(--panel) url("/art/paper-grain.svg");
+  border-radius: 2px;
+}
+.formula-folio .folio-corners,
+.source-example .folio-corners {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.formula-folio-heading,
+.source-example > header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: start;
+}
+.folio-source {
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.formula-folio h2,
+.source-example h2 {
+  font: 500 clamp(28px, 3.2vw, 39px)/1.15 var(--display);
+  margin: 6px 0 18px;
+}
+.formula-track {
+  white-space: nowrap;
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 5px 8px;
+  margin-top: 3px;
+}
+.formula-inscription {
+  padding: 20px 0 8px;
+  font-size: clamp(19px, 2.5vw, 26px);
+  text-align: center;
+  overflow: auto;
+}
+.formula-inscription > .math {
+  display: block;
+}
+.formula-condition {
+  text-align: center;
+  max-width: 820px;
+  margin: 12px auto 28px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.formula-mode {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.formula-mode button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 9px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.formula-mode button[aria-selected="true"] {
+  background: var(--gold-wash);
+  border-color: var(--line);
+  color: var(--ink);
+}
+.formula-mode button span {
+  font-variant-numeric: tabular-nums;
+}
+.formula-problem {
+  max-width: 850px;
+  margin: 12px auto 20px;
+  padding: 22px 26px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.formula-problem > p:not(.folio-source) {
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 12px 0;
+}
+.formulary-page .text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.6;
+  text-align: left;
+}
+.formula-demonstration {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+  min-height: 340px;
+  padding: 12px 0 22px;
+}
+.formula-demonstration figure {
+  margin: 0;
+  min-width: 0;
+}
+.formula-diagram {
+  width: 100%;
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+.formula-move {
+  transition:
+    transform 900ms ease,
+    opacity 700ms ease,
+    y 900ms ease,
+    height 900ms ease,
+    stroke-dashoffset 1200ms ease,
+    d 900ms ease;
+}
+.formula-demonstration figcaption {
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--muted);
+  padding: 8px 20px 0;
+  min-height: 45px;
+}
+.formula-explanation {
+  padding: 10px 0;
+  min-width: 0;
+}
+.formula-step-number {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.16em;
+  font-variant-numeric: tabular-nums;
+}
+.formula-explanation h3 {
+  font: 500 29px/1.15 var(--display);
+  margin: 14px 0 18px;
+}
+.formula-step-math {
+  font-size: 19px;
+  padding: 14px 0 18px;
+  max-width: 100%;
+  overflow: auto;
+}
+.formula-explanation p {
+  margin: 0;
+  line-height: 1.9;
+  font-size: 15px;
+}
+.formula-playback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding: 19px 0;
+}
+.playback-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.formula-play-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  background: var(--accent-wash);
+  border: 1px solid var(--line);
+  padding: 0 17px;
+  height: 42px;
+  border-radius: 3px;
+  font-size: 13px;
+  min-width: 121px;
+}
+.formula-scrubber {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 18px;
+  min-width: 200px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.formula-scrubber span {
+  white-space: nowrap;
+}
+.formula-scrubber input,
+.live-exploration input {
+  width: 100%;
+  accent-color: var(--accent);
+  min-width: 50px;
+}
+.formula-step-index {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 5px 0 28px;
+}
+.formula-step-index li {
+  min-width: 0;
+}
+.formula-step-index button {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 10px 7px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.formula-step-index button[aria-current] {
+  border-color: var(--line);
+  color: var(--ink);
+  background: var(--paper-deep);
+}
+.formula-step-index button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 11px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.formula-marginalia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.formula-marginalia h3 {
+  font: 500 24px/1.2 var(--display);
+  margin: 0 0 10px;
+}
+.formula-marginalia p {
+  font-size: 14px;
+  line-height: 1.85;
+  margin: 8px 0;
+}
+.formula-marginalia .text-button {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.formula-check-answer {
+  padding-top: 12px;
+  color: var(--accent-strong);
+}
+.formula-folio-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+.formula-folio-footer .text-button {
+  font-size: 13px;
+}
+.formula-motion-note {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.formulary-browse,
+.crash-index {
+  margin-top: 25px;
+}
+.formulary-page summary {
+  cursor: pointer;
+  color: var(--accent);
+  line-height: 1.7;
+  padding: 14px 0;
+  font-size: 15px;
+}
+.formula-study-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 12px;
+}
+.formula-study-grid button {
+  display: grid;
+  gap: 12px;
+  text-align: left;
+  padding: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  min-width: 0;
+  border-radius: 2px;
+}
+.formula-study-grid strong {
+  font: 500 25px/1.1 var(--display);
+}
+.formula-study-grid button > span:last-child {
+  overflow: auto;
+  max-width: 100%;
+  font-size: 13px;
+}
+.live-exploration {
+  border-top: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+.live-exploration-body {
+  max-width: 620px;
+  margin: 10px auto 24px;
+}
+.live-exploration-body label {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+}
+.live-exploration svg {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  margin: 18px auto;
+}
+.live-exploration output {
+  display: block;
+  overflow: auto;
+  padding: 10px 0;
+  text-align: center;
+}
+.live-exploration p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.formula-reference > section {
+  margin: 35px 0 48px;
+}
+.formula-reference > section > header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+.formula-reference > section > header > span {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  font-family: var(--display);
+  color: var(--gold);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.formula-reference h2 {
+  font: 500 34px/1.1 var(--display);
+  margin: 0;
+}
+.formula-reference small {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: 11px;
+  color: var(--muted);
+}
+.formula-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.formula-reference-grid article {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 26px;
+  min-width: 0;
+}
+.formula-reference h3 {
+  font: 500 26px/1.2 var(--display);
+  margin: 0 0 16px;
+}
+.reference-equation {
+  font-size: 19px;
+  overflow: auto;
+  padding: 10px 0 16px;
+}
+.formula-reference-grid p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 12px 0;
+}
+.formula-reference-grid .reference-condition {
+  font-size: 12px;
+  color: var(--muted);
+}
+.formula-reference-grid .text-button {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.crash-index p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.crash-index ol {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+}
+.crash-index li {
+  display: grid;
+  grid-template-columns: 52px 1fr 40px;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.crash-index li span:last-child {
+  text-align: right;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.source-example {
+  padding-bottom: 26px;
+}
+.source-facsimile {
+  overflow: auto;
+  max-width: 100%;
+  margin: 22px 0;
+  padding: 6px 0;
+  background: var(--paper);
+}
+.source-facsimile img {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  margin: 0 auto 16px;
+}
+.source-facsimile.enlarged img {
+  width: 1000px;
+  max-width: none;
+}
+.source-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 26px;
+  padding: 12px 0;
+}
+.source-actions .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.source-actions a {
+  font-size: 14px;
+}
+.source-written-solution {
+  margin-top: 22px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.source-written-solution h3 {
+  font: 500 28px/1.2 var(--display);
+}
+.source-example > footer {
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.source-example > footer p {
+  margin: 0;
+}
+.source-example > footer a {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.formulary-colophon {
+  margin: 45px auto 10px;
+  max-width: 800px;
+  text-align: center;
+}
+.formulary-colophon .fleuron {
+  height: 28px;
+  width: 100%;
+  margin: 8px auto 18px;
+}
+.formulary-colophon p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+.formulary-empty {
+  padding: 50px 20px;
+  text-align: center;
+  border: 1px solid var(--line);
+}
+.formulary-empty h2 {
+  font-family: var(--display);
+  font-size: 32px;
+}
+@media (max-width: 900px) {
+  .formulary-heading {
+    grid-template-columns: 1fr 190px;
+    gap: 12px;
+  }
+  .formula-folio,
+  .source-example {
+    padding: 28px 24px 24px;
+  }
+  .formula-demonstration {
+    gap: 20px;
+  }
+  .formula-step-index {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .formula-study-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .formula-explanation h3 {
+    font-size: 26px;
+  }
+  .formula-step-math {
+    font-size: 17px;
+  }
+}
+@media (max-width: 650px) {
+  .formulary-heading {
+    grid-template-columns: 1fr 110px;
+    gap: 6px;
+  }
+  .formulary-heading h1 {
+    font-size: 43px;
+  }
+  .formulary-heading .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+  }
+  .formulary-heading p:not(.eyebrow) {
+    font-size: 13px;
+  }
+  .formulary-tally {
+    grid-column: 1/-1;
+    font-size: 10px;
+    gap: 6px 14px;
+  }
+  .formulary-tabs {
+    gap: 8px 19px;
+  }
+  .formulary-tabs button {
+    font-size: 19px;
+    padding: 10px 0;
+  }
+  .formula-folio,
+  .source-example {
+    padding: 24px 18px 20px;
+  }
+  .formula-folio-heading {
+    display: block;
+  }
+  .formula-track {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .formula-folio h2,
+  .source-example h2 {
+    font-size: 31px;
+  }
+  .formula-inscription {
+    font-size: 18px;
+    text-align: left;
+    padding: 14px 0 8px;
+  }
+  .formula-condition {
+    text-align: left;
+    font-size: 12px;
+  }
+  .formula-mode {
+    gap: 5px;
+  }
+  .formula-mode button {
+    padding: 9px 8px;
+    font-size: 12px;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .formula-demonstration {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 20px;
+    min-height: 0;
+  }
+  .formula-demonstration figure {
+    width: 100%;
+  }
+  .formula-demonstration figcaption {
+    padding: 6px 0 0;
+    font-size: 11px;
+    min-height: 0;
+  }
+  .formula-explanation {
+    width: 100%;
+    padding: 6px 0;
+  }
+  .formula-explanation h3 {
+    font-size: 29px;
+    margin: 10px 0;
+  }
+  .formula-explanation p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .formula-step-math {
+    font-size: 17px;
+  }
+  .formula-playback {
+    gap: 16px;
+  }
+  .playback-buttons {
+    justify-content: center;
+    width: 100%;
+    gap: 7px;
+  }
+  .formula-play-button {
+    min-width: 106px;
+    padding: 0 11px;
+    font-size: 12px;
+  }
+  .formula-icon-button {
+    width: 37px;
+    height: 37px;
+  }
+  .formula-play-button {
+    height: 37px;
+  }
+  .formula-scrubber {
+    min-width: 0;
+    width: 100%;
+    flex-basis: 100%;
+    gap: 12px;
+  }
+  .formula-step-index {
+    gap: 5px;
+  }
+  .formula-step-index button {
+    padding: 8px 4px;
+    gap: 6px;
+    font-size: 11px;
+  }
+  .formula-step-index button span {
+    width: 19px;
+    height: 19px;
+    font-size: 10px;
+  }
+  .formula-marginalia {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .formula-problem {
+    padding: 18px 14px;
+  }
+  .formula-problem > p:not(.folio-source) {
+    font-size: 15px;
+  }
+  .formula-selector {
+    gap: 10px;
+    align-items: end;
+  }
+  .formula-selector label {
+    font-size: 11px;
+  }
+  .formula-selector select {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+  .formula-selector > div {
+    gap: 5px;
+    padding-bottom: 3px;
+  }
+  .formula-study-grid,
+  .formula-reference-grid,
+  .crash-index ol {
+    grid-template-columns: 1fr;
+  }
+  .formula-reference-grid article {
+    padding: 24px 18px;
+  }
+  .formula-reference h2 {
+    font-size: 28px;
+  }
+  .formula-reference small {
+    display: none;
+  }
+  .formula-reference > section > header {
+    gap: 12px;
+  }
+  .live-exploration-body label {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .source-example > footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .source-facsimile img {
+    min-width: 520px;
+  }
+  .source-facsimile.enlarged img {
+    min-width: 1000px;
+  }
+  .source-actions {
+    gap: 18px;
+  }
+  .formulary-result-count {
+    line-height: 1.8;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .formula-move {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+@media print {
+  .formulary-heading .natural-plate,
+  .formulary-tabs,
+  .formulary-toolbar,
+  .formula-selector,
+  .formula-playback,
+  .formula-step-index,
+  .formula-folio-footer,
+  .formula-reference button,
+  .formulary-colophon,
+  .crash-index {
+    display: none !important;
+  }
+  .formula-reference-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .formula-reference-grid article {
+    break-inside: avoid;
+  }
+}
+/* Ornament stays within the margins, clear of text and controls. */
+.formula-folio > .folio-corners > svg,
+.source-example > .folio-corners > svg {
+  width: 35px;
+  height: 35px;
+}
+.formula-reference-grid .reference-source {
+  color: var(--gold);
+  font-size: 11px;
+  margin-top: 18px;
+}
+.source-facsimile {
+  scrollbar-width: thin;
+  scrollbar-color: var(--art-rule) var(--paper);
+}
+.skip-link:not(:focus) {
+  visibility: hidden;
+}
+.reference-equation > span,
+.formula-inscription > span,
+.formula-step-math > span {
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 650px) {
+  .formulary-heading > div {
+    display: contents;
+  }
+  .formulary-heading .eyebrow,
+  .formulary-heading h1 {
+    grid-column: 1 / -1;
+  }
+  .formulary-heading p:not(.eyebrow) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .formulary-heading .natural-plate {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .formulary-heading .formulary-tally {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    margin-top: 8px;
+  }
+  .reference-equation {
+    font-size: 17px;
+  }
+}
+
+.source-corrected-figure {
+  margin: 20px auto 26px;
+  text-align: center;
+}
+.source-corrected-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 12px;
+}
+.source-corrected-figure figcaption {
+  font-size: 13px;
+  color: var(--muted);
+}
+.source-correction {
+  margin: 20px 0;
+  padding: 14px 0;
+  border-block: 1px solid var(--line);
+  font-size: 14px;
+}
+.source-correction summary {
+  cursor: pointer;
+  line-height: 1.7;
+}
+.source-correction p {
+  max-width: 72ch;
+  margin: 12px 0;
+  line-height: 1.7;
+}
+.source-correction details {
+  margin-top: 12px;
+}
+
+.source-figure-scroll {
+  max-width: 100%;
+  overflow: auto;
+}

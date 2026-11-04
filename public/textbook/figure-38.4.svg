@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="448" height="260" viewBox="0 0 448 260">
+<title>Right triangle ACE and its quarter-division triangle DBF</title>
+<g fill="none" stroke="#344f64" stroke-width="1.6" stroke-linejoin="round">
+<path d="M100 30V210H340Z"/><path d="M100 198H112V210"/>
+<path d="M100 75L160 210L280 165Z" fill="#ece5bd"/>
+</g><g fill="#29382d" font-family="Georgia,serif" font-size="16">
+<text x="95" y="21">A</text><text x="79" y="79">B</text>
+<text x="86" y="231">C</text><text x="155" y="231">D</text>
+<text x="343" y="222">E</text><text x="284" y="158">F</text>
+<text x="65" y="137">12</text><text x="224" y="232">16</text>
+<text x="231" y="111">20</text></g></svg>

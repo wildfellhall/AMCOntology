@@ -1,0 +1,37 @@
+{
+  "name": "amc-ontology",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4174 --strictPort",
+    "test": "node --test tests/*.test.mjs",
+    "validate:content": "node scripts/validate-content.mjs && node scripts/validate-formulary.mjs",
+    "test:browser": "node scripts/browser-check.mjs && node scripts/session-check.mjs",
+    "test:competition": "node scripts/competition-check.mjs",
+    "test:a11y": "node scripts/accessibility-check.mjs",
+    "format": "prettier --write src tests scripts/*.mjs vite.config.ts",
+    "test:formulary": "node scripts/formulary-check.mjs"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.1",
+    "katex": "^0.19.1",
+    "lucide-react": "^1.67.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@types/katex": "^0.16.8",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.2.1",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}
